@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-neutral-50">
       <Header />
       <Hero />
-      <TrustIndicators />
+
       <About />
       <Programs />
       <ImpactMetrics />
