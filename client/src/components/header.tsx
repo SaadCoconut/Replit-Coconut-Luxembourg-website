@@ -89,18 +89,21 @@ export default function Header() {
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="sm" className="text-neutral-700 hover:text-primary">
                     <Globe className="w-4 h-4 mr-2" />
-                    {language.toUpperCase()}
+                    {language === 'en' && '🇺🇸'}
+                    {language === 'fr' && '🇫🇷'}
+                    {language === 'lb' && '🇱🇺'}
+                    <span className="ml-1">{language.toUpperCase()}</span>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem onClick={() => setLanguage('en')}>
-                    English
+                    <span className="mr-2">🇺🇸</span>English
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => setLanguage('fr')}>
-                    Français
+                    <span className="mr-2">🇫🇷</span>Français
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => setLanguage('lb')}>
-                    Lëtzebuergesch
+                    <span className="mr-2">🇱🇺</span>Lëtzebuergesch
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -190,21 +193,21 @@ export default function Header() {
                 <div className="flex flex-wrap gap-2">
                   <button
                     onClick={() => setLanguage('en')}
-                    className={`px-2 py-1 text-xs rounded ${language === 'en' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                    className={`px-3 py-2 text-sm rounded-lg flex items-center gap-2 ${language === 'en' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
                   >
-                    EN
+                    <span>🇺🇸</span>EN
                   </button>
                   <button
                     onClick={() => setLanguage('fr')}
-                    className={`px-2 py-1 text-xs rounded ${language === 'fr' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                    className={`px-3 py-2 text-sm rounded-lg flex items-center gap-2 ${language === 'fr' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
                   >
-                    FR
+                    <span>🇫🇷</span>FR
                   </button>
                   <button
                     onClick={() => setLanguage('lb')}
-                    className={`px-2 py-1 text-xs rounded ${language === 'lb' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                    className={`px-3 py-2 text-sm rounded-lg flex items-center gap-2 ${language === 'lb' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
                   >
-                    LB
+                    <span>🇱🇺</span>LB
                   </button>
                 </div>
               </div>
