@@ -41,9 +41,16 @@ export default function Programs() {
             return (
               <div key={index} className={`${program.bgColor} rounded-3xl p-8 relative overflow-hidden h-64 flex flex-col justify-between`}>
                 <div className="absolute top-4 right-4">
-                  <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                  <button 
+                    className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer"
+                    onClick={() => {
+                      // For now, we'll show an alert - replace with actual project links
+                      alert(`View ${program.title} projects - Coming soon!`);
+                    }}
+                    title={`View ${program.title} projects`}
+                  >
                     <Plus className="w-4 h-4 text-white" />
-                  </div>
+                  </button>
                 </div>
                 
                 <div className="flex-1 flex items-center justify-center">
