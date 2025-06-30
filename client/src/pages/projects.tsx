@@ -1,5 +1,5 @@
 import { useRoute } from "wouter";
-import { ArrowLeft, ExternalLink, Calendar, Users, Target } from "lucide-react";
+import { ArrowLeft, ExternalLink, Calendar, Users, Target, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -15,6 +15,7 @@ interface Project {
   europeanNumber: string;
   fundingProgram: string;
   image: string;
+  infopackUrl: string;
 }
 
 const projects: Record<string, Project[]> = {
@@ -35,7 +36,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA210-YOU-000255419",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/designyouth/"
     },
     {
       id: "mind-your-business",
@@ -53,7 +55,8 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000034567",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusiness-2/"
     },
     {
       id: "mindyourbusiness-plus",
@@ -71,7 +74,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000045678",
       fundingProgram: "Erasmus+",
-      image: "@assets/Screenshot 2025-07-01 at 07.08.04_1751324889604.png"
+      image: "@assets/Screenshot 2025-07-01 at 07.08.04_1751324889604.png",
+      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusinessplus/"
     },
     {
       id: "enviropreneurs-generation",
@@ -89,7 +93,8 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021521",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/enviropreneursgeneration/"
     }
   ],
   "digital-participation": [
@@ -109,7 +114,8 @@ const projects: Record<string, Project[]> = {
       year: "2020",
       europeanNumber: "2020-2-LU01-KA105-063297",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/digiton/"
     },
     {
       id: "electrick",
@@ -127,7 +133,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000067890",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/electrick/"
     },
     {
       id: "electrick-plus",
@@ -145,7 +152,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-2-LU01-KA152-YOU-000078901",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/electrickplus/"
     }
   ],
   "intercultural-dialogue": [
@@ -167,7 +175,8 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021467",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/pontsdetolerance/"
     },
     {
       id: "couscous-rolls",
@@ -185,7 +194,8 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000056789",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/couscousrolls/"
     },
     {
       id: "questioning-migration",
@@ -203,7 +213,8 @@ const projects: Record<string, Project[]> = {
       year: "2022",
       europeanNumber: "2022-1-LU01-KA152-YOU-000045672",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/questioningmigration/"
     },
     {
       id: "stop-bullying",
@@ -221,7 +232,8 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000067834",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/stopbullying/"
     }
   ],
   "sustainable-development": [
@@ -241,7 +253,8 @@ const projects: Record<string, Project[]> = {
       year: "2022",
       europeanNumber: "2022-1-LU01-KA152-YOU-000034512",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2022/04/Its-a-Water-Matter.png"
+      image: "https://coconutwork.org/wp-content/uploads/2022/04/Its-a-Water-Matter.png",
+      infopackUrl: "https://coconutwork.org/portfolio/watermatter/"
     },
     {
       id: "demogreen",
@@ -259,7 +272,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000078945",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2024/05/DemoGreen.png"
+      image: "https://coconutwork.org/wp-content/uploads/2024/05/DemoGreen.png",
+      infopackUrl: "https://coconutwork.org/portfolio/demogreen/"
     },
     {
       id: "mindful-youth",
@@ -277,7 +291,8 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000089012",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/mindfulyouth/"
     },
     {
       id: "empact3",
@@ -295,7 +310,8 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000067823",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      infopackUrl: "https://coconutwork.org/portfolio/empact3/"
     }
   ]
 };
@@ -342,7 +358,7 @@ export default function ProjectsPage() {
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-64 md:h-full object-cover"
+                    className="w-full aspect-square object-cover rounded-lg"
                   />
                 </div>
                 
@@ -386,23 +402,30 @@ export default function ProjectsPage() {
                   
                   <div className="mb-6">
                     <h3 className="font-semibold text-neutral-800 mb-2">Key Objectives</h3>
-                    <ul className="space-y-1">
-                      {project.objectives.slice(0, 3).map((objective, index) => (
+                    <ul className="space-y-2">
+                      {project.objectives.map((objective, index) => (
                         <li key={index} className="text-neutral-600 text-sm flex items-start">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
                           {objective}
                         </li>
                       ))}
-                      {project.objectives.length > 3 && (
-                        <li className="text-neutral-500 text-sm italic">
-                          + {project.objectives.length - 3} more objectives
-                        </li>
-                      )}
                     </ul>
                   </div>
                   
-                  <div className="text-xs text-neutral-400">
-                    European Project Number: {project.europeanNumber}
+                  <div className="flex items-center justify-between">
+                    <div className="text-xs text-neutral-400">
+                      European Project Number: {project.europeanNumber}
+                    </div>
+                    
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => window.open(project.infopackUrl, '_blank')}
+                      className="flex items-center gap-2"
+                    >
+                      <FileText className="w-4 h-4" />
+                      View Infopack
+                    </Button>
                   </div>
                 </div>
               </div>
