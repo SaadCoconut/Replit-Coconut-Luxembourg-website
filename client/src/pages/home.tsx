@@ -5,8 +5,6 @@ import About from "@/components/about";
 import Programs from "@/components/programs";
 import ImpactMetrics from "@/components/impact-metrics";
 import SuccessStories from "@/components/success-stories";
-import Team from "@/components/team";
-import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -19,8 +17,6 @@ export default function Home() {
       <Programs />
       <ImpactMetrics />
       <SuccessStories />
-      <Team />
-      <Contact />
       <Footer />
     </div>
   );

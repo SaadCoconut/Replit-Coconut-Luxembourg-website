@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function SuccessStories() {
   const stories = [
@@ -58,12 +57,6 @@ export default function SuccessStories() {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button className="bg-primary text-white hover:bg-blue-700 transition-colors">
-            View All Case Studies
-          </Button>
         </div>
       </div>
     </section>

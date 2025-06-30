@@ -8,6 +8,7 @@ import ProjectsPage from "@/pages/projects";
 import LocalInitiativesPage from "@/pages/local-initiatives";
 import ResourcesPage from "@/pages/resources";
 import PartnershipsPage from "@/pages/partnerships";
+import TeamPage from "@/pages/team";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/local-initiatives" component={LocalInitiativesPage} />
       <Route path="/resources" component={ResourcesPage} />
       <Route path="/partnerships" component={PartnershipsPage} />
+      <Route path="/team" component={TeamPage} />
       <Route component={NotFound} />
     </Switch>
   );
