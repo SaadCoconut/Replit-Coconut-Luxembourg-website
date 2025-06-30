@@ -35,7 +35,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA210-YOU-000255419",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2024/03/Design-YOUTH-Future.png"
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "mind-your-business",
@@ -53,7 +53,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000034567",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2023/03/Mind-Your-Business.png"
+      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "mindyourbusiness-plus",
@@ -89,7 +89,7 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021521",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2021/10/Enviropreneurs-Generation.png"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ],
   "digital-participation": [
@@ -109,7 +109,7 @@ const projects: Record<string, Project[]> = {
       year: "2020",
       europeanNumber: "2020-2-LU01-KA105-063297",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2021/03/Dig-IT-ON.png"
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "electrick",
@@ -127,7 +127,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000067890",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2024/02/Elec-trick.png"
+      image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "electrick-plus",
@@ -167,7 +167,7 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021467",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2021/09/Ponts-de-Tolerance.png"
+      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "couscous-rolls",
@@ -185,7 +185,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000056789",
       fundingProgram: "Erasmus+",
-      image: "https://coconutwork.org/wp-content/uploads/2023/06/Couscous-Rolls-Not-Gender-Roles.png"
+      image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "questioning-migration",
