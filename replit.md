@@ -1,8 +1,8 @@
-# Hope Foundation Website
+# Coconut Luxembourg Website
 
 ## Overview
 
-This is a full-stack web application for Hope Foundation, a nonprofit organization focused on community development, education, healthcare, and economic empowerment. The application showcases the foundation's work and provides mechanisms for partnership inquiries and visitor engagement through a contact form and interactive chatbot.
+This is a full-stack web application for Coconut Luxembourg, part of the Coconutwork network - a European youth work organization focused on empowering Euro-Mediterranean youth through innovative non-formal education programs. The application showcases the organization's work in entrepreneurship, intercultural learning, digital participation, and environmental sustainability, and provides mechanisms for partnership inquiries and visitor engagement through a contact form and interactive chatbot.
 
 ## System Architecture
 
@@ -32,19 +32,19 @@ This is a full-stack web application for Hope Foundation, a nonprofit organizati
 
 ### Database Schema
 - **Users**: Basic user management structure (id, username, password)
-- **Contact Messages**: Partnership inquiry storage (organization details, contact info, interests)
+- **Contact Messages**: Partnership inquiry storage (organization details, contact info, program interests)
 - **Chat Messages**: Conversational data with session tracking and user/bot differentiation
 
 ### Frontend Components
-- **Landing Page**: Hero section, about, programs, impact metrics, success stories, team profiles
-- **Contact Form**: Multi-field form with validation for partnership inquiries
-- **Interactive Chatbot**: Session-based chat interface with quick response options
+- **Landing Page**: Hero section showcasing youth empowerment, programs (entrepreneurship, intercultural learning, digital participation, environmental sustainability), impact metrics, success stories, team profiles
+- **Contact Form**: Multi-field form with validation for partnership inquiries focused on youth development programs
+- **Interactive Chatbot**: Session-based chat interface with responses tailored to Coconut Luxembourg's youth work and Erasmus+ programs
 - **UI Components**: Comprehensive shadcn/ui component library (buttons, forms, dialogs, etc.)
 
 ### API Endpoints
-- `POST /api/contact`: Contact form submission with validation
+- `POST /api/contact`: Contact form submission with validation for youth program partnerships
 - `GET /api/chat/:sessionId`: Retrieve chat history for a session
-- `POST /api/chat`: Send chat messages and receive bot responses
+- `POST /api/chat`: Send chat messages and receive bot responses about youth programs and opportunities
 
 ### Storage Layer
 - **Interface**: IStorage for consistent data access patterns
@@ -94,8 +94,11 @@ This is a full-stack web application for Hope Foundation, a nonprofit organizati
 - Cartographer plugin for enhanced development experience
 
 ## Changelog
-- June 30, 2025. Initial setup
+- June 30, 2025: Initial setup with Hope Foundation template
+- June 30, 2025: Transformed to Coconut Luxembourg - updated all content to reflect youth empowerment organization, Coconutwork network membership, European focus, and authentic programs (entrepreneurship, intercultural learning, digital participation, environmental sustainability)
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Organization: Coconut Luxembourg (part of Coconutwork network)
+Focus: Youth empowerment through non-formal education across Europe and Mediterranean region

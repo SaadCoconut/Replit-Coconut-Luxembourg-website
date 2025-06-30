@@ -56,8 +56,8 @@ export default function Contact() {
     <section id="contact" className="bg-neutral-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-neutral-800 mb-4">Partnership Opportunities</h2>
-          <p className="text-xl text-neutral-600">Ready to create lasting impact together?</p>
+          <h2 className="text-4xl font-bold text-neutral-800 mb-4">Partner With Us</h2>
+          <p className="text-xl text-neutral-600">Ready to empower youth across Europe together?</p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16">
@@ -72,9 +72,9 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-neutral-800 mb-1">Headquarters</h4>
                   <p className="text-neutral-600">
-                    1234 Development Drive<br />
-                    Global City, GC 12345<br />
-                    United States
+                    Luxembourg City<br />
+                    Luxembourg<br />
+                    European Union
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-800 mb-1">Email</h4>
-                  <p className="text-neutral-600">partnerships@hopefoundation.org</p>
+                  <p className="text-neutral-600">info@coconutluxembourg.org</p>
                 </div>
               </div>
             </div>
@@ -190,10 +190,12 @@ export default function Contact() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="education">Education Programs</SelectItem>
-                          <SelectItem value="healthcare">Healthcare Initiatives</SelectItem>
-                          <SelectItem value="economic">Economic Development</SelectItem>
-                          <SelectItem value="multi-sector">Multi-sector Collaboration</SelectItem>
+                          <SelectItem value="entrepreneurship">Entrepreneurship & Design Thinking</SelectItem>
+                          <SelectItem value="intercultural">Intercultural Learning & Peacebuilding</SelectItem>
+                          <SelectItem value="digital">Digital Youth Participation</SelectItem>
+                          <SelectItem value="environmental">Environmental Sustainability</SelectItem>
+                          <SelectItem value="youth-exchange">Youth Exchange Programs</SelectItem>
+                          <SelectItem value="training">Training Courses</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -210,7 +212,7 @@ export default function Contact() {
                       <FormControl>
                         <Textarea 
                           rows={4} 
-                          placeholder="Tell us about your funding priorities and how we can collaborate..." 
+                          placeholder="Tell us about your youth development goals and how we can collaborate on empowering young people..." 
                           {...field} 
                         />
                       </FormControl>

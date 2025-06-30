@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Hope Foundation</h3>
+            <h3 className="text-xl font-bold mb-4">Coconut Luxembourg</h3>
             <p className="text-neutral-300 mb-4">
-              Creating sustainable positive change in underserved communities through strategic partnerships.
+              Empowering youth across Europe and the Mediterranean through innovative non-formal education and strategic partnerships.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-neutral-400 hover:text-white transition-colors">
@@ -26,10 +26,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Programs</h4>
             <ul className="space-y-2 text-neutral-300">
-              <li><a href="#" className="hover:text-white transition-colors">Education Excellence</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Healthcare Access</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Economic Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Community Empowerment</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Entrepreneurship & Design Thinking</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Intercultural Learning</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Digital Youth Participation</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Environmental Sustainability</a></li>
             </ul>
           </div>
           
@@ -46,10 +46,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-neutral-300">
-              <li>1234 Development Drive</li>
-              <li>Global City, GC 12345</li>
-              <li>+1 (555) 123-4567</li>
-              <li>info@hopefoundation.org</li>
+              <li>Luxembourg City</li>
+              <li>Luxembourg, EU</li>
+              <li>+352 (555) 123-4567</li>
+              <li>info@coconutluxembourg.org</li>
             </ul>
           </div>
         </div>

@@ -61,7 +61,7 @@ export default function Chatbot() {
   // Initial bot message for new sessions
   const initialMessage = {
     id: 0,
-    message: "Hello! I'm here to help answer questions about Hope Foundation and our partnership opportunities. How can I assist you today?",
+    message: "Hello! I'm here to help answer questions about Coconut Luxembourg and our youth empowerment programs. How can I assist you today?",
     isUser: false,
     sessionId,
     createdAt: new Date()
@@ -80,7 +80,7 @@ export default function Chatbot() {
                 <Bot className="w-4 h-4" />
               </div>
               <div>
-                <h4 className="font-semibold">Hope Assistant</h4>
+                <h4 className="font-semibold">Coconut Assistant</h4>
                 <p className="text-xs text-blue-100">Online now</p>
               </div>
             </div>

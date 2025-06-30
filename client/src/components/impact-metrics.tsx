@@ -1,24 +1,24 @@
 export default function ImpactMetrics() {
   const metrics = [
     {
-      value: "250,000+",
-      label: "Lives Directly Impacted",
-      description: "Across all programs since 2015"
+      value: "4,000+",
+      label: "Youth Impacted",
+      description: "Across Europe and Mediterranean"
     },
     {
-      value: "$4.2M",
-      label: "Funding Managed",
-      description: "98% efficiency rating from partners"
+      value: "100+",
+      label: "Projects Completed",
+      description: "In entrepreneurship and education"
     },
     {
-      value: "45+",
-      label: "Active Partnerships",
-      description: "With government and NGO agencies"
+      value: "70+",
+      label: "Active Partners",
+      description: "Organizations across the network"
     },
     {
-      value: "89%",
-      label: "Project Sustainability", 
-      description: "Programs continuing post-funding"
+      value: "20+",
+      label: "Countries Reached", 
+      description: "Throughout Europe and beyond"
     }
   ];
 
@@ -28,7 +28,7 @@ export default function ImpactMetrics() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Measurable Impact</h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Transparent reporting and data-driven results that demonstrate the effectiveness of our partnerships
+            Real numbers that showcase our commitment to empowering youth across Europe and the Mediterranean region
           </p>
         </div>
         

@@ -1,9 +1,9 @@
 export default function TrustIndicators() {
   const partners = [
-    "UN Partners",
-    "Gates Foundation", 
-    "World Bank",
-    "USAID"
+    "Erasmus+ Programme",
+    "European Youth Foundation", 
+    "Anna Lindh Foundation",
+    "European Commission"
   ];
 
   return (

@@ -1,30 +1,38 @@
-import { GraduationCap, Heart, TrendingUp } from "lucide-react";
+import { Users, Lightbulb, Globe, Leaf } from "lucide-react";
 
 export default function Programs() {
   const programs = [
     {
-      icon: GraduationCap,
-      title: "Education Excellence",
-      description: "Building quality educational infrastructure and providing teacher training programs that have improved literacy rates by 40% in partner communities.",
-      image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      stats: ["25 Schools Built", "500+ Teachers Trained"],
+      icon: Lightbulb,
+      title: "Entrepreneurship & Design Thinking",
+      description: "Empowering young entrepreneurs through innovative design thinking methodologies and business development skills for creating sustainable social ventures.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      stats: ["100+ Projects", "Youth Entrepreneurs"],
       color: "primary"
     },
     {
-      icon: Heart,
-      title: "Healthcare Access",
-      description: "Establishing mobile clinics and training community health workers to provide essential healthcare services in remote areas.",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      stats: ["15 Clinics", "50,000+ Patients"],
+      icon: Users,
+      title: "Intercultural Learning & Peacebuilding",
+      description: "Fostering understanding and cooperation between diverse communities through intercultural dialogue, conflict resolution, and peacebuilding initiatives.",
+      image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      stats: ["70+ Partners", "Cross-cultural Exchange"],
       color: "secondary"
     },
     {
-      icon: TrendingUp,
-      title: "Economic Development",
-      description: "Microfinance programs and vocational training that have helped create over 2,000 sustainable jobs in rural communities.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      stats: ["2,000+ Jobs", "85% Success Rate"],
+      icon: Globe,
+      title: "Digital Youth Participation",
+      description: "Enhancing digital literacy and promoting active youth participation in democratic processes through innovative digital tools and platforms.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      stats: ["4,000+ Youth", "Digital Skills"],
       color: "accent"
+    },
+    {
+      icon: Leaf,
+      title: "Environmental Sustainability",
+      description: "Promoting environmental awareness and sustainable practices among youth through hands-on projects and green leadership development programs.",
+      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      stats: ["Green Leaders", "Eco Projects"],
+      color: "secondary"
     }
   ];
 
@@ -38,7 +46,7 @@ export default function Programs() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programs.map((program, index) => {
             const Icon = program.icon;
             return (

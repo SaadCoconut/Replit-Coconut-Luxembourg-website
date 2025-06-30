@@ -23,11 +23,11 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
         <div className="max-w-3xl">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Transforming Communities Through{" "}
-            <span className="text-accent">Sustainable Impact</span>
+            Empowering Youth Through{" "}
+            <span className="text-accent">Innovative Education</span>
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-            Partnering with funding agencies to create lasting change in education, healthcare, and community development across underserved regions.
+            Creating opportunities for young people across Europe and the Euro-Mediterranean region through non-formal education, youth exchanges, and skills development programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
@@ -41,7 +41,7 @@ export default function Hero() {
               variant="outline"
               className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors h-auto"
             >
-              Partnership Opportunities
+              Partner With Us
             </Button>
           </div>
         </div>

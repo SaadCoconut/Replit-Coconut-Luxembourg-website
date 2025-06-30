@@ -65,25 +65,33 @@ export async function registerRoutes(app: Express): Promise<Server> {
 function generateBotResponse(userMessage: string): string {
   const message = userMessage.toLowerCase();
   
-  if (message.includes('partnership') || message.includes('collaborate') || message.includes('funding')) {
-    return "We offer several partnership models including direct funding collaboration, capacity building, and joint program implementation. Would you like to schedule a call to discuss your specific needs?";
+  if (message.includes('partnership') || message.includes('collaborate') || message.includes('funding') || message.includes('erasmus')) {
+    return "We offer various partnership opportunities including Erasmus+ youth exchanges, training courses, and joint projects in entrepreneurship and intercultural learning. Would you like to explore specific collaboration models?";
   }
   
   if (message.includes('program') || message.includes('service') || message.includes('what do you do')) {
-    return "Our main program areas are Education Excellence, Healthcare Access, and Economic Development. Each program has proven methodologies and measurable outcomes. Which area interests you most?";
+    return "Our main focus areas are Entrepreneurship & Design Thinking, Intercultural Learning & Peacebuilding, Digital Youth Participation, and Environmental Sustainability. All programs use non-formal education methods. Which area interests you most?";
   }
   
   if (message.includes('impact') || message.includes('measure') || message.includes('results')) {
-    return "We use a comprehensive M&E framework including baseline studies, regular monitoring, and impact evaluations. All our partners receive quarterly reports with detailed metrics and stories of change.";
+    return "We've impacted over 4,000 youth across 20+ countries through 100+ completed projects. We focus on personal development, entrepreneurial skills, digital literacy, and cultural understanding among Euro-Mediterranean youth.";
   }
   
   if (message.includes('contact') || message.includes('reach') || message.includes('call')) {
-    return "You can contact our partnership team at partnerships@hopefoundation.org or call us at +1 (555) 123-4567. We'd be happy to schedule a meeting to discuss opportunities.";
+    return "You can contact our team at info@coconutluxembourg.org or call us at +352 (555) 123-4567. We'd be happy to discuss youth exchange opportunities and partnership possibilities.";
   }
   
   if (message.includes('hello') || message.includes('hi') || message.includes('help')) {
-    return "Hello! I'm here to help answer questions about Hope Foundation and our partnership opportunities. You can ask me about our programs, impact measurement, or how to get in touch with our team.";
+    return "Hello! I'm here to help answer questions about Coconut Luxembourg and our youth empowerment programs. You can ask me about our projects, partnership opportunities, or how to get involved with our network.";
   }
   
-  return "Thank you for your question! For detailed information about that topic, I'd recommend contacting our partnership team directly at partnerships@hopefoundation.org or using the contact form on this page.";
+  if (message.includes('youth') || message.includes('young people') || message.includes('participants')) {
+    return "We work primarily with young people aged 18-30, especially NEETs and youth from migrant backgrounds. Our programs focus on developing entrepreneurial skills, digital literacy, and intercultural competencies through experiential learning.";
+  }
+  
+  if (message.includes('coconutwork') || message.includes('network')) {
+    return "Coconut Luxembourg is part of the Coconutwork network - a European network spanning 8+ countries including France, Italy, Spain, Germany, Belgium, Sweden, and Iceland. Together we create opportunities for youth mobility and learning.";
+  }
+  
+  return "Thank you for your question! For detailed information about that topic, I'd recommend contacting our team directly at info@coconutluxembourg.org or using the contact form on this page.";
 }

@@ -1,21 +1,21 @@
 export default function Team() {
   const teamMembers = [
     {
-      name: "Dr. Maria Rodriguez",
-      title: "Executive Director",
-      bio: "15+ years in international development with expertise in partnership management and sustainable program design. Former World Bank consultant.",
+      name: "Sophie Laurent",
+      title: "National Coordinator",
+      bio: "Youth work specialist with extensive experience in non-formal education and European project management. Expert in intercultural learning methodologies.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
     },
     {
-      name: "James Thompson", 
-      title: "Program Director",
-      bio: "Community development specialist with proven track record in education and healthcare program implementation across Sub-Saharan Africa.",
+      name: "Alex Mueller", 
+      title: "Project Manager",
+      bio: "Digital innovation advocate specializing in youth entrepreneurship and design thinking. Coordinates youth exchanges and training programs across the network.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
     },
     {
-      name: "Dr. Aisha Patel",
-      title: "Finance & Operations Director", 
-      bio: "CPA with expertise in nonprofit financial management and compliance. Ensures transparent reporting and efficient fund utilization.",
+      name: "Amira Ben Salem",
+      title: "Partnership Development Officer", 
+      bio: "Expert in Euro-Mediterranean cooperation with a focus on building bridges between European and Mediterranean youth organizations and fostering cultural exchange.",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
     }
   ];
