@@ -60,6 +60,11 @@ export default function Header() {
                   Resources
                 </button>
               </Link>
+              <Link href="/partnerships">
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+                  Partners
+                </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -126,6 +131,14 @@ export default function Header() {
                   className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
                 >
                   Resources
+                </button>
+              </Link>
+              <Link href="/partnerships">
+                <button 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
+                >
+                  Partners
                 </button>
               </Link>
               <button
