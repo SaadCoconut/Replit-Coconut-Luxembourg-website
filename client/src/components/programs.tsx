@@ -10,29 +10,29 @@ export default function Programs() {
     {
       icon: Lightbulb,
       title: t('programs.designThinking.title'),
-      bgColor: "bg-amber-800",
+      bgColor: "bg-green-600",
       textColor: "text-white",
       route: "design-thinking"
     },
     {
       icon: Heart,
       title: t('programs.intercultural.title'), 
-      bgColor: "bg-amber-600",
+      bgColor: "bg-green-700",
       textColor: "text-white",
       route: "intercultural-dialogue"
     },
     {
       icon: Wifi,
       title: t('programs.digital.title'),
-      bgColor: "bg-orange-600", 
+      bgColor: "bg-green-500", 
       textColor: "text-white",
       route: "digital-participation"
     },
     {
       icon: Leaf,
       title: t('programs.environmental.title'),
-      bgColor: "bg-yellow-200",
-      textColor: "text-orange-600",
+      bgColor: "bg-green-100",
+      textColor: "text-green-800",
       route: "sustainable-development"
     }
   ];

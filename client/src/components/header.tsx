@@ -3,6 +3,7 @@ import { Menu, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logoPath from "@assets/Coco Luxembourg_1751327600427.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,7 +28,12 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex items-center space-x-3">
+              <img 
+                src={logoPath} 
+                alt="Coconut Luxembourg Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <h1 className="text-2xl font-bold text-primary">Coconut Luxembourg</h1>
             </div>
           </div>

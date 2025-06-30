@@ -13,15 +13,15 @@
   --card-foreground: hsl(224, 71%, 4%);
   --border: hsl(220, 13%, 91%);
   --input: hsl(220, 13%, 91%);
-  --primary: hsl(221, 83%, 53%);
+  --primary: hsl(127, 68%, 45%);
   --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(160, 84%, 39%);
+  --secondary: hsl(28, 45%, 35%);
   --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(38, 92%, 50%);
+  --accent: hsl(127, 68%, 45%);
   --accent-foreground: hsl(210, 40%, 98%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(224, 71%, 4%);
+  --ring: hsl(127, 68%, 45%);
   --radius: 0.5rem;
   
   /* Custom neutral palette */
@@ -48,15 +48,15 @@
   --card-foreground: hsl(210, 20%, 98%);
   --border: hsl(215, 28%, 17%);
   --input: hsl(215, 28%, 17%);
-  --primary: hsl(221, 83%, 53%);
+  --primary: hsl(127, 68%, 45%);
   --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(160, 84%, 39%);
+  --secondary: hsl(28, 45%, 35%);
   --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(38, 92%, 50%);
+  --accent: hsl(127, 68%, 45%);
   --accent-foreground: hsl(210, 40%, 98%);
   --destructive: hsl(0, 62%, 30%);
   --destructive-foreground: hsl(210, 20%, 98%);
-  --ring: hsl(216, 12%, 84%);
+  --ring: hsl(127, 68%, 45%);
 }
 
 @layer base {
