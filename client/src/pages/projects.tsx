@@ -35,7 +35,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA210-YOU-000255419",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "mind-your-business",
@@ -53,7 +53,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000034567",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "mindyourbusiness-plus",
@@ -71,7 +71,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000045678",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "enviropreneurs-generation",
@@ -89,7 +89,7 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021521",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ],
   "digital-participation": [
@@ -109,7 +109,7 @@ const projects: Record<string, Project[]> = {
       year: "2020",
       europeanNumber: "2020-2-LU01-KA105-063297",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "electrick",
@@ -127,7 +127,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000067890",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1541872705-1f73c6400ec9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "electrick-plus",
@@ -145,7 +145,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-2-LU01-KA152-YOU-000078901",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ],
   "intercultural-dialogue": [
@@ -167,7 +167,7 @@ const projects: Record<string, Project[]> = {
       year: "2021",
       europeanNumber: "2021-1-LU01-KA152-YOU-000021467",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "couscous-rolls",
@@ -185,7 +185,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000056789",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "questioning-migration",
@@ -203,7 +203,7 @@ const projects: Record<string, Project[]> = {
       year: "2022",
       europeanNumber: "2022-1-LU01-KA152-YOU-000045672",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1573166475921-8bebc4a5e5b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "stop-bullying",
@@ -221,7 +221,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000067834",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ],
   "sustainable-development": [
@@ -241,7 +241,7 @@ const projects: Record<string, Project[]> = {
       year: "2022",
       europeanNumber: "2022-1-LU01-KA152-YOU-000034512",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "demogreen",
@@ -259,7 +259,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000078945",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "mindful-youth",
@@ -277,7 +277,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000089012",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     },
     {
       id: "empact3",
@@ -295,7 +295,7 @@ const projects: Record<string, Project[]> = {
       year: "2023",
       europeanNumber: "2023-1-LU01-KA152-YOU-000067823",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
     }
   ]
 };
