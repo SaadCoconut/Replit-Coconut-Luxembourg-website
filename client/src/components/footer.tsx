@@ -1,6 +1,8 @@
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-neutral-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Coconut Luxembourg</h3>
             <p className="text-neutral-300 mb-4">
-              Empowering youth across Europe and the Mediterranean through innovative non-formal education and strategic partnerships.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/coconutwork-org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
@@ -24,7 +26,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Programs</h4>
+            <h4 className="font-semibold mb-4">{t('footer.programs')}</h4>
             <ul className="space-y-2 text-neutral-300">
               <li><a href="#" className="hover:text-white transition-colors">Design Thinking & Entrepreneurship</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Digital Participation</a></li>
@@ -34,7 +36,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4">{t('footer.resources')}</h4>
             <ul className="space-y-2 text-neutral-300">
               <li><a href="#" className="hover:text-white transition-colors">Annual Reports</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Impact Studies</a></li>
@@ -44,7 +46,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-neutral-300">
               <li>Coconut Luxembourg</li>
               <li>5 rue du commerce</li>

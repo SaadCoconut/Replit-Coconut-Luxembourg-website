@@ -1,34 +1,36 @@
 import { Lightbulb, Heart, Wifi, Leaf, Plus } from "lucide-react";
 import { useLocation } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Programs() {
   const [, setLocation] = useLocation();
+  const { t } = useLanguage();
   
   const programs = [
     {
       icon: Lightbulb,
-      title: "Entrepreneurship & Design Thinking",
+      title: t('programs.designThinking.title'),
       bgColor: "bg-amber-800",
       textColor: "text-white",
       route: "design-thinking"
     },
     {
       icon: Heart,
-      title: "Intercultural Learning & Peacebuilding", 
+      title: t('programs.intercultural.title'), 
       bgColor: "bg-amber-600",
       textColor: "text-white",
       route: "intercultural-dialogue"
     },
     {
       icon: Wifi,
-      title: "Digital Youth Participation",
+      title: t('programs.digital.title'),
       bgColor: "bg-orange-600", 
       textColor: "text-white",
       route: "digital-participation"
     },
     {
       icon: Leaf,
-      title: "Environmental Sustainability",
+      title: t('programs.environmental.title'),
       bgColor: "bg-yellow-200",
       textColor: "text-orange-600",
       route: "sustainable-development"
@@ -39,7 +41,8 @@ export default function Programs() {
     <section id="programs" className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-neutral-800 mb-4">OUR PRIORITIES</h2>
+          <h2 className="text-4xl font-bold text-neutral-800 mb-4">{t('programs.title')}</h2>
+          <p className="text-xl text-neutral-600">{t('programs.description')}</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

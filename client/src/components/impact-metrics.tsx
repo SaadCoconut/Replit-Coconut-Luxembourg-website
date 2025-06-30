@@ -1,23 +1,26 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function ImpactMetrics() {
+  const { t } = useLanguage();
   const metrics = [
     {
       value: "4,000+",
-      label: "Youth Impacted",
+      label: t('impact.youthImpacted'),
       description: "Across Europe and Mediterranean"
     },
     {
       value: "100+",
-      label: "Projects Completed",
+      label: t('impact.projectsDelivered'),
       description: "In entrepreneurship and education"
     },
     {
       value: "70+",
-      label: "Active Partners",
+      label: t('impact.partnersCollaborated'),
       description: "Organizations across the network"
     },
     {
       value: "20+",
-      label: "Countries Reached", 
+      label: t('impact.countriesReached'), 
       description: "Throughout Europe and beyond"
     }
   ];
@@ -26,9 +29,9 @@ export default function ImpactMetrics() {
     <section id="impact" className="bg-gradient-to-r from-primary to-blue-700 text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Measurable Impact</h2>
+          <h2 className="text-4xl font-bold mb-4">{t('impact.title')}</h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Real numbers that showcase our commitment to empowering youth across Europe and the Mediterranean region
+            {t('impact.description')}
           </p>
         </div>
         

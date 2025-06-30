@@ -43,10 +43,18 @@ const translations = {
     'programs.intercultural.description': 'Promoting mutual understanding, tolerance, and peaceful coexistence through structured intercultural exchanges and dialogue facilitation.',
     'programs.environmental.title': 'Environmental Sustainability',
     'programs.environmental.description': 'Empowering youth to become environmental leaders and advocates for sustainable development in their communities.',
-    
-    // Testimonials
-    'testimonials.title': 'What People Say',
-    'testimonials.description': 'Testimonials from participants and partners who experienced our programs',
+
+    // Impact Metrics Section  
+    'impact.title': 'Our Impact',
+    'impact.description': 'Making a difference across Europe and the Mediterranean',
+    'impact.projectsDelivered': 'Projects Delivered',
+    'impact.youthImpacted': 'Youth Impacted',
+    'impact.partnersCollaborated': 'Partners Collaborated',
+    'impact.countriesReached': 'Countries Reached',
+
+    // Success Stories Section
+    'successStories.title': 'What People Say',
+    'successStories.description': 'Testimonials from participants and partners who experienced our programs',
     
     // Contact Section
     'contact.title': 'Get in Touch',
@@ -65,6 +73,10 @@ const translations = {
     'footer.resources': 'Resources',
     'footer.contact': 'Contact',
     'footer.copyright': '© 2025 Coconut Luxembourg. All rights reserved.',
+
+    // Team Section
+    'team.title': 'Our Team',
+    'team.description': 'Coconut Luxembourg is supported by a dedicated team with vast experience in non-formal education and youth projects.',
     
     // Common
     'common.learnMore': 'Learn More',
@@ -106,10 +118,18 @@ const translations = {
     'programs.intercultural.description': 'Promouvoir la compréhension mutuelle, la tolérance et la coexistence pacifique grâce aux échanges interculturels structurés et à la facilitation du dialogue.',
     'programs.environmental.title': 'Durabilité Environnementale',
     'programs.environmental.description': 'Autonomiser les jeunes pour qu\'ils deviennent des leaders environnementaux et des défenseurs du développement durable dans leurs communautés.',
-    
-    // Testimonials
-    'testimonials.title': 'Ce que Disent les Gens',
-    'testimonials.description': 'Témoignages de participants et partenaires qui ont vécu nos programmes',
+
+    // Impact Metrics Section  
+    'impact.title': 'Notre Impact',
+    'impact.description': 'Faire la différence à travers l\'Europe et la Méditerranée',
+    'impact.projectsDelivered': 'Projets Réalisés',
+    'impact.youthImpacted': 'Jeunes Impactés',
+    'impact.partnersCollaborated': 'Partenaires Collaborés',
+    'impact.countriesReached': 'Pays Atteints',
+
+    // Success Stories Section
+    'successStories.title': 'Ce que Disent les Gens',
+    'successStories.description': 'Témoignages de participants et partenaires qui ont vécu nos programmes',
     
     // Contact Section
     'contact.title': 'Contactez-nous',
@@ -128,6 +148,10 @@ const translations = {
     'footer.resources': 'Ressources',
     'footer.contact': 'Contact',
     'footer.copyright': '© 2025 Coconut Luxembourg. Tous droits réservés.',
+
+    // Team Section
+    'team.title': 'Notre Équipe',
+    'team.description': 'Coconut Luxembourg est soutenu par une équipe dédiée avec une vaste expérience en éducation non formelle et projets jeunesse.',
     
     // Common
     'common.learnMore': 'En Savoir Plus',
@@ -169,10 +193,18 @@ const translations = {
     'programs.intercultural.description': 'Géigesäitegt Verständnis, Toleranz a friddlech Coexistenz förderen duerch strukturéiert interkulturell Austausch an Dialogfacilitatioun.',
     'programs.environmental.title': 'Ëmwelt Nohaltegkeet',
     'programs.environmental.description': 'Jugendlecher stäerken fir Ëmweltleader an Advokaten fir nohalteg Entwécklung an hiren Gemeinschaften ze ginn.',
-    
-    // Testimonials
-    'testimonials.title': 'Wat d\'Leit soen',
-    'testimonials.description': 'Testimoniale vun Participanten a Partner déi eis Programmer erlieft hunn',
+
+    // Impact Metrics Section  
+    'impact.title': 'Eisen Impact',
+    'impact.description': 'Ënnerscheed maachen duerch Europa an d\'Mëttelmier',
+    'impact.projectsDelivered': 'Projeten Ëmgesat',
+    'impact.youthImpacted': 'Jugendlecher Beaflosst',
+    'impact.partnersCollaborated': 'Partner Kollaboréiert',
+    'impact.countriesReached': 'Länner Erreecht',
+
+    // Success Stories Section
+    'successStories.title': 'Wat d\'Leit soen',
+    'successStories.description': 'Testimoniale vun Participanten a Partner déi eis Programmer erlieft hunn',
     
     // Contact Section
     'contact.title': 'Kontakt',
@@ -191,6 +223,10 @@ const translations = {
     'footer.resources': 'Ressourcen',
     'footer.contact': 'Kontakt',
     'footer.copyright': '© 2025 Coconut Luxembourg. All Rechter reservéiert.',
+
+    // Team Section
+    'team.title': 'Eis Equipe',
+    'team.description': 'Coconut Luxembourg gëtt ënnerstëtzt vun enger dedicéierter Equipe mat grousser Erfahrung an net-formeller Educatioun a Jugendprojeten.',
     
     // Common
     'common.learnMore': 'Méi ze wëssen',
