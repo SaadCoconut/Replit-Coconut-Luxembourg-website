@@ -1,10 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -25,55 +33,77 @@ export default function Header() {
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-6">
               <button
                 onClick={() => scrollToSection('home')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                Home
+                {t('nav.home')}
               </button>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                About
+                {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection('programs')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                Programs
+                {t('nav.programs')}
               </button>
               <button
                 onClick={() => scrollToSection('impact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                Impact
+                {t('nav.impact')}
               </button>
               <Link href="/local-initiatives">
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
-                  Local Initiatives
+                  {t('nav.localInitiatives')}
                 </button>
               </Link>
               <Link href="/resources">
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
-                  Resources
+                  {t('nav.resources')}
                 </button>
               </Link>
               <Link href="/partnerships">
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
-                  Partners
+                  {t('nav.partners')}
+                </button>
+              </Link>
+              <Link href="/team">
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+                  Team
                 </button>
               </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                Contact
+                {t('nav.contact')}
               </button>
-              <Button className="bg-accent text-white hover:bg-yellow-500 transition-colors">
-                Donate Now
-              </Button>
+              
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="sm" className="text-neutral-700 hover:text-primary">
+                    <Globe className="w-4 h-4 mr-2" />
+                    {language.toUpperCase()}
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem onClick={() => setLanguage('en')}>
+                    English
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setLanguage('fr')}>
+                    Français
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => setLanguage('lb')}>
+                    Lëtzebuergesch
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
           
@@ -97,32 +127,32 @@ export default function Header() {
                 onClick={() => scrollToSection('home')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
-                Home
+                {t('nav.home')}
               </button>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
-                About
+                {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection('programs')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
-                Programs
+                {t('nav.programs')}
               </button>
               <button
                 onClick={() => scrollToSection('impact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
-                Impact
+                {t('nav.impact')}
               </button>
               <Link href="/local-initiatives">
                 <button 
                   onClick={() => setIsMenuOpen(false)}
                   className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
                 >
-                  Local Initiatives
+                  {t('nav.localInitiatives')}
                 </button>
               </Link>
               <Link href="/resources">
@@ -130,7 +160,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
                 >
-                  Resources
+                  {t('nav.resources')}
                 </button>
               </Link>
               <Link href="/partnerships">
@@ -138,18 +168,46 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
                 >
-                  Partners
+                  {t('nav.partners')}
+                </button>
+              </Link>
+              <Link href="/team">
+                <button 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
+                >
+                  Team
                 </button>
               </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
-                Contact
+                {t('nav.contact')}
               </button>
-              <Button className="bg-accent text-white hover:bg-yellow-500 transition-colors mx-3 mt-2">
-                Donate Now
-              </Button>
+              
+              <div className="px-3 py-2">
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={() => setLanguage('en')}
+                    className={`px-2 py-1 text-xs rounded ${language === 'en' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                  >
+                    EN
+                  </button>
+                  <button
+                    onClick={() => setLanguage('fr')}
+                    className={`px-2 py-1 text-xs rounded ${language === 'fr' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                  >
+                    FR
+                  </button>
+                  <button
+                    onClick={() => setLanguage('lb')}
+                    className={`px-2 py-1 text-xs rounded ${language === 'lb' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                  >
+                    LB
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         )}

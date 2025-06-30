@@ -1,27 +1,26 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function About() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="bg-neutral-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-neutral-800 mb-6">About Coconut Luxembourg</h2>
+            <h2 className="text-4xl font-bold text-neutral-800 mb-6">{t('about.title')}</h2>
             <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-              Coconut Luxembourg provides young people (18-30) with opportunities to get actively engaged in their own 
-              personal growth and development to fulfill their potential. We collaborate with youth and community 
-              organizations from Europe and neighboring countries to provide quality training and learning opportunities.
+              {t('about.description1')}
             </p>
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-              Our scope of work spans Luxembourg, EU and Euro-Mediterranean regions, with intercultural learning as one 
-              of our core values. We believe in non-formal education as a pillar of learning to include and grow the 
-              interest of young people, especially those who are not privileged.
+              {t('about.description2')}
             </p>
             
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-3xl font-bold text-primary">1,000+</span>
-                <span className="text-xl text-neutral-600">youth impacted from</span>
+                <span className="text-xl text-neutral-600">{t('about.impactNumbers')}</span>
                 <span className="text-3xl font-bold text-secondary">20+</span>
-                <span className="text-xl text-neutral-600">countries</span>
+                <span className="text-xl text-neutral-600">{t('about.countries')}</span>
               </div>
             </div>
           </div>
