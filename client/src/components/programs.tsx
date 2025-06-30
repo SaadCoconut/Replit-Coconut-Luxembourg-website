@@ -1,30 +1,37 @@
 import { Lightbulb, Heart, Wifi, Leaf, Plus } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Programs() {
+  const [, setLocation] = useLocation();
+  
   const programs = [
     {
       icon: Lightbulb,
       title: "Entrepreneurship & Design Thinking",
       bgColor: "bg-amber-800",
-      textColor: "text-white"
+      textColor: "text-white",
+      route: "design-thinking"
     },
     {
       icon: Heart,
       title: "Intercultural Learning & Peacebuilding", 
       bgColor: "bg-amber-600",
-      textColor: "text-white"
+      textColor: "text-white",
+      route: "intercultural-dialogue"
     },
     {
       icon: Wifi,
       title: "Digital Youth Participation",
       bgColor: "bg-orange-600", 
-      textColor: "text-white"
+      textColor: "text-white",
+      route: "digital-participation"
     },
     {
       icon: Leaf,
       title: "Environmental Sustainability",
       bgColor: "bg-yellow-200",
-      textColor: "text-orange-600"
+      textColor: "text-orange-600",
+      route: "sustainable-development"
     }
   ];
 
@@ -44,8 +51,7 @@ export default function Programs() {
                   <button 
                     className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer"
                     onClick={() => {
-                      // For now, we'll show an alert - replace with actual project links
-                      alert(`View ${program.title} projects - Coming soon!`);
+                      setLocation(`/projects/${program.route}`);
                     }}
                     title={`View ${program.title} projects`}
                   >
