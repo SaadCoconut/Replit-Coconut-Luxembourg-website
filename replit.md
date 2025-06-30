@@ -97,6 +97,8 @@ This is a full-stack web application for Coconut Luxembourg, part of the Coconut
 - June 30, 2025: Initial setup with Hope Foundation template
 - June 30, 2025: Transformed to Coconut Luxembourg - updated all content to reflect youth empowerment organization, Coconutwork network membership, European focus, and authentic programs (entrepreneurship, intercultural learning, digital participation, environmental sustainability)
 - June 30, 2025: Added comprehensive project portfolio with 16 authentic Coconut Luxembourg projects from Coconutwork database, categorized by priority areas with detailed project pages and navigation
+- June 30, 2025: Enhanced project layout with square image frames, complete objectives display, and PDF infopack download buttons
+- June 30, 2025: Added Local Initiatives section - dedicated page showcasing local community activities and articles with sample content covering youth leadership, digital skills training, environmental action, and intercultural dialogue events in Luxembourg cities
 
 ## User Preferences
 

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +50,11 @@ export default function Header() {
               >
                 Impact
               </button>
+              <Link href="/local-initiatives">
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+                  Local Initiatives
+                </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -101,6 +107,14 @@ export default function Header() {
               >
                 Impact
               </button>
+              <Link href="/local-initiatives">
+                <button 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
+                >
+                  Local Initiatives
+                </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
