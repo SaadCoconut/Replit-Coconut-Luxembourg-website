@@ -71,7 +71,7 @@ const projects: Record<string, Project[]> = {
       year: "2024",
       europeanNumber: "2024-1-LU01-KA152-YOU-000045678",
       fundingProgram: "Erasmus+",
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      image: "@assets/Screenshot 2025-07-01 at 07.08.04_1751324889604.png"
     },
     {
       id: "enviropreneurs-generation",
