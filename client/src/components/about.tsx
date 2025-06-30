@@ -20,7 +20,7 @@ export default function About() {
             
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">4,000+</div>
+                <div className="text-3xl font-bold text-primary mb-2">1,000+</div>
                 <div className="text-sm text-neutral-600 uppercase tracking-wide">Youth Impacted</div>
               </div>
               <div className="text-center">
