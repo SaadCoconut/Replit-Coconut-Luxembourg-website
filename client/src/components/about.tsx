@@ -18,14 +18,12 @@ export default function About() {
               interest of young people, especially those who are not privileged.
             </p>
             
-            <div className="grid grid-cols-2 gap-8 mb-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">1,000+</div>
-                <div className="text-sm text-neutral-600 uppercase tracking-wide">Youth Impacted from</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary mb-2">20+</div>
-                <div className="text-sm text-neutral-600 uppercase tracking-wide">Countries</div>
+            <div className="text-center mb-8">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="text-3xl font-bold text-primary">1,000+</span>
+                <span className="text-xl text-neutral-600">youth impacted from</span>
+                <span className="text-3xl font-bold text-secondary">20+</span>
+                <span className="text-xl text-neutral-600">countries</span>
               </div>
             </div>
             
