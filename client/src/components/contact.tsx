@@ -4,7 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { MapPin, Phone, Mail, Download, Calendar } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
@@ -56,8 +56,8 @@ export default function Contact() {
     <section id="contact" className="bg-neutral-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-neutral-800 mb-4">Partner With Us</h2>
-          <p className="text-xl text-neutral-600">Ready to empower youth across Europe together?</p>
+          <h2 className="text-4xl font-bold text-neutral-800 mb-4">Get in Touch</h2>
+          <p className="text-xl text-neutral-600">Ready to collaborate on empowering youth across Europe? We'd love to hear from you.</p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16">
@@ -72,20 +72,11 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-neutral-800 mb-1">Headquarters</h4>
                   <p className="text-neutral-600">
-                    Luxembourg City<br />
-                    Luxembourg<br />
-                    European Union
+                    Coconut Luxembourg<br />
+                    5 rue du commerce<br />
+                    Esch-sur-Alzette, 4067<br />
+                    Luxembourg
                   </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mr-4 mt-1">
-                  <Phone className="w-5 h-5 text-secondary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-neutral-800 mb-1">Phone</h4>
-                  <p className="text-neutral-600">+1 (555) 123-4567</p>
                 </div>
               </div>
               
@@ -95,22 +86,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-neutral-800 mb-1">Email</h4>
-                  <p className="text-neutral-600">info@coconutluxembourg.org</p>
+                  <p className="text-neutral-600">office@coconutwork.org</p>
                 </div>
-              </div>
-            </div>
-            
-            <div className="mt-12">
-              <h3 className="text-xl font-semibold text-neutral-800 mb-4">Quick Actions</h3>
-              <div className="space-y-3">
-                <Button className="w-full bg-primary text-white hover:bg-blue-700 transition-colors">
-                  <Download className="w-4 h-4 mr-3" />
-                  Download Partnership Proposal
-                </Button>
-                <Button className="w-full bg-secondary text-white hover:bg-green-700 transition-colors">
-                  <Calendar className="w-4 h-4 mr-3" />
-                  Schedule a Meeting
-                </Button>
               </div>
             </div>
           </div>

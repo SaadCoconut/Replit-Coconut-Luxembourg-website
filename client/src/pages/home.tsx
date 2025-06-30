@@ -8,7 +8,6 @@ import SuccessStories from "@/components/success-stories";
 import Team from "@/components/team";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
-import Chatbot from "@/components/chatbot";
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <Team />
       <Contact />
       <Footer />
-      <Chatbot />
     </div>
   );
 }

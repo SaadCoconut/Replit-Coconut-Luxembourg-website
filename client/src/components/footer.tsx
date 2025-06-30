@@ -17,7 +17,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/Coconutwork.org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/coconutwork.org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/coco.nutwork" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
