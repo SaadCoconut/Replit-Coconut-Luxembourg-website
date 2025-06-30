@@ -1,6 +1,16 @@
-import { ArrowLeft, Download, ExternalLink } from "lucide-react";
+import { ArrowLeft, Download, ExternalLink, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
 
 interface Partner {
   id: string;
@@ -150,7 +160,59 @@ const partnerTypes = {
   }
 };
 
+// Partnership form schema
+const partnershipFormSchema = z.object({
+  organizationName: z.string().min(2, "Organization name must be at least 2 characters"),
+  organizationType: z.string().min(1, "Please select an organization type"),
+  website: z.string().url("Please enter a valid website URL").optional().or(z.literal("")),
+  country: z.string().min(1, "Please select a country"),
+  city: z.string().min(2, "City must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email address"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type PartnershipFormData = z.infer<typeof partnershipFormSchema>;
+
+const organizationTypes = [
+  "NGO/Association/Non profit",
+  "Higher education establishment",
+  "School - Secondary level",
+  "School - VET",
+  "Public body - Local/Regional",
+  "Public body - National",
+  "Public body - European/International",
+  "Enterprise/Social enterprise",
+  "Foundation",
+  "Research Institute",
+  "Adult education centre",
+  "Chambers of commerce/Trade union/Trade association",
+  "Other type of organisation"
+];
+
+const countries = [
+  "Luxembourg", "Belgium", "France", "Germany", "Netherlands", "Austria", "Switzerland",
+  "Italy", "Spain", "Portugal", "United Kingdom", "Ireland", "Denmark", "Sweden",
+  "Norway", "Finland", "Poland", "Czech Republic", "Slovakia", "Hungary", "Slovenia",
+  "Croatia", "Romania", "Bulgaria", "Greece", "Cyprus", "Malta", "Estonia", "Latvia",
+  "Lithuania", "Other"
+];
+
 export default function PartnershipsPage() {
+  const { toast } = useToast();
+
+  const form = useForm<PartnershipFormData>({
+    resolver: zodResolver(partnershipFormSchema),
+    defaultValues: {
+      organizationName: "",
+      organizationType: "",
+      website: "",
+      country: "",
+      city: "",
+      email: "",
+      message: "",
+    },
+  });
+
   const getPartnersByType = (type: string) => {
     return partners.filter(partner => partner.type === type);
   };
@@ -159,6 +221,34 @@ export default function PartnershipsPage() {
     if (partner.website) {
       window.open(partner.website, '_blank');
     }
+  };
+
+  const partnershipMutation = useMutation({
+    mutationFn: async (data: PartnershipFormData) => {
+      return apiRequest("/api/partnership", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+      });
+    },
+    onSuccess: () => {
+      toast({
+        title: "Partnership request submitted!",
+        description: "We'll review your application and get back to you soon.",
+      });
+      form.reset();
+    },
+    onError: (error) => {
+      toast({
+        title: "Submission failed",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    },
+  });
+
+  const onSubmit = (data: PartnershipFormData) => {
+    partnershipMutation.mutate(data);
   };
 
   return (
@@ -227,6 +317,150 @@ export default function PartnershipsPage() {
             </div>
           );
         })}
+
+        {/* Partnership Form */}
+        <div className="mt-16 bg-white rounded-2xl shadow-lg border border-neutral-200 p-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-neutral-800 mb-4">
+                Become a Partner
+              </h2>
+              <p className="text-lg text-neutral-600">
+                Coconutwork is your better choice! Join our pan-European network empowering young people 
+                through personal and professional growth across Europe and the Euro-Mediterranean region.
+              </p>
+            </div>
+
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="organizationName">Organization Name *</Label>
+                  <Input
+                    id="organizationName"
+                    {...form.register("organizationName")}
+                    placeholder="Enter your organization name"
+                  />
+                  {form.formState.errors.organizationName && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.organizationName.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="organizationType">Type of Organization *</Label>
+                  <Select onValueChange={(value) => form.setValue("organizationType", value)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select organization type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {organizationTypes.map((type) => (
+                        <SelectItem key={type} value={type}>
+                          {type}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  {form.formState.errors.organizationType && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.organizationType.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="website">Website</Label>
+                  <Input
+                    id="website"
+                    {...form.register("website")}
+                    placeholder="https://your-website.com"
+                  />
+                  {form.formState.errors.website && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.website.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="country">Country *</Label>
+                  <Select onValueChange={(value) => form.setValue("country", value)}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your country" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {countries.map((country) => (
+                        <SelectItem key={country} value={country}>
+                          {country}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  {form.formState.errors.country && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.country.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="city">City *</Label>
+                  <Input
+                    id="city"
+                    {...form.register("city")}
+                    placeholder="Enter your city"
+                  />
+                  {form.formState.errors.city && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.city.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    {...form.register("email")}
+                    placeholder="your-email@organization.com"
+                  />
+                  {form.formState.errors.email && (
+                    <p className="text-sm text-red-600">
+                      {form.formState.errors.email.message}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message">Message *</Label>
+                <Textarea
+                  id="message"
+                  {...form.register("message")}
+                  placeholder="Tell us about your organization and how you'd like to partner with us..."
+                  rows={5}
+                />
+                {form.formState.errors.message && (
+                  <p className="text-sm text-red-600">
+                    {form.formState.errors.message.message}
+                  </p>
+                )}
+              </div>
+
+              <div className="flex justify-center">
+                <Button 
+                  type="submit" 
+                  size="lg"
+                  disabled={partnershipMutation.isPending}
+                  className="bg-primary text-white hover:bg-blue-700 min-w-[200px]"
+                >
+                  {partnershipMutation.isPending ? "Submitting..." : "Submit Partnership Request"}
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
 
         {/* Partnership Call to Action */}
         <div className="mt-16 bg-gradient-to-r from-primary to-blue-600 rounded-2xl p-12 text-center text-white">

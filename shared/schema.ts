@@ -27,6 +27,18 @@ export const chatMessages = pgTable("chat_messages", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
+export const partnershipMessages = pgTable("partnership_messages", {
+  id: serial("id").primaryKey(),
+  organizationName: text("organization_name").notNull(),
+  organizationType: text("organization_type").notNull(),
+  website: text("website"),
+  country: text("country").notNull(),
+  city: text("city").notNull(),
+  email: text("email").notNull(),
+  message: text("message").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,

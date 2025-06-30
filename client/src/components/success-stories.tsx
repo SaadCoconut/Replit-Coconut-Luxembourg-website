@@ -4,16 +4,28 @@ import { Button } from "@/components/ui/button";
 export default function SuccessStories() {
   const stories = [
     {
-      name: "Maria Gonzalez",
-      title: "Project Officer, European Youth Foundation",
-      quote: "Coconut Luxembourg's innovative approach to youth work has consistently impressed us. Their projects demonstrate real impact in developing entrepreneurial skills and fostering intercultural understanding among young people.",
-      partnership: "Erasmus+ Partnership • 15+ projects funded"
+      name: "Sophie L.",
+      title: "Youth Exchange Participant",
+      quote: "Amazing experience with Coconutwork! The youth exchange in Spain was life-changing. I learned so much about entrepreneurship and made friends from 12 different countries. The facilitators were incredibly supportive and professional. Highly recommend! 🌟",
+      partnership: "MindYourBusiness+ Project • 2024"
     },
     {
-      name: "Ahmed Hassan",
-      title: "Programme Coordinator, Anna Lindh Foundation", 
-      quote: "The quality of their youth exchanges and the measurable outcomes in participant development make Coconut Luxembourg a standout partner in our Euro-Mediterranean network. Their methodology is exemplary.",
-      partnership: "Strategic Partnership • Cross-cultural programs"
+      name: "Marcus K.",
+      title: "Local Workshop Participant", 
+      quote: "Attended their digital skills workshop in Luxembourg City and it exceeded all expectations. The trainers knew their stuff and made complex topics easy to understand. Got practical skills I use in my job now. Thank you Coconutwork team!",
+      partnership: "Digital Participation Program • 2024"
+    },
+    {
+      name: "Elena R.",
+      title: "Youth Worker",
+      quote: "As a youth worker, I've participated in several Coconutwork training courses. Their approach to intercultural learning is outstanding. Always well-organized, meaningful content, and great networking opportunities. Professional and impactful work!",
+      partnership: "Training for Youth Workers • 2023-2024"
+    },
+    {
+      name: "David M.",
+      title: "Environmental Action Participant",
+      quote: "The environmental sustainability project in Differdange was incredible! Learned practical ways to make a difference in my community. The team's passion for youth empowerment and environmental action is truly inspiring. Keep up the great work!",
+      partnership: "EmpACT 3 Project • 2024"
     }
   ];
 
@@ -21,11 +33,11 @@ export default function SuccessStories() {
     <section className="bg-neutral-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-neutral-800 mb-4">Success Stories</h2>
-          <p className="text-xl text-neutral-600">Real impact from our partnerships with European funding organizations</p>
+          <h2 className="text-4xl font-bold text-neutral-800 mb-4">What People Say</h2>
+          <p className="text-xl text-neutral-600">Testimonials from participants and partners who experienced our programs</p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8">
           {stories.map((story, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-8">
               <div className="flex items-center mb-6">

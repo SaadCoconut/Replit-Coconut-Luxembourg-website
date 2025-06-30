@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,14 +11,14 @@ export default function Footer() {
               Empowering youth across Europe and the Mediterranean through innovative non-formal education and strategic partnerships.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/coconutwork-org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/Coconutwork.org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com/coconutwork.org" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition-colors">
+                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -46,16 +46,18 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-neutral-300">
-              <li>Luxembourg City</li>
-              <li>Luxembourg, EU</li>
-              <li>+352 (555) 123-4567</li>
-              <li>info@coconutluxembourg.org</li>
+              <li>Coconut Luxembourg</li>
+              <li>5 rue du commerce</li>
+              <li>Esch-sur-Alzette, 4067</li>
+              <li>Luxembourg</li>
+              <li>Immatriculation: F12829</li>
+              <li>office@coconutwork.org</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-neutral-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-neutral-400 text-sm">© 2024 Hope Foundation. All rights reserved.</p>
+          <p className="text-neutral-400 text-sm">© 2025 Coconut Luxembourg. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
             <a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a>
