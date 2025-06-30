@@ -70,7 +70,7 @@ function generateBotResponse(userMessage: string): string {
   }
   
   if (message.includes('program') || message.includes('service') || message.includes('what do you do')) {
-    return "Our main focus areas are Entrepreneurship & Design Thinking, Intercultural Learning & Peacebuilding, Digital Youth Participation, and Environmental Sustainability. All programs use non-formal education methods. Which area interests you most?";
+    return "Our main priority areas are: 1) Design thinking and entrepreneurship 2) Digital participation 3) Intercultural dialogue and peace-building 4) Sustainable development. We provide non-formal education opportunities for young people and youth workers. Which area interests you most?";
   }
   
   if (message.includes('impact') || message.includes('measure') || message.includes('results')) {
@@ -86,7 +86,7 @@ function generateBotResponse(userMessage: string): string {
   }
   
   if (message.includes('youth') || message.includes('young people') || message.includes('participants')) {
-    return "We work primarily with young people aged 18-30, especially NEETs and youth from migrant backgrounds. Our programs focus on developing entrepreneurial skills, digital literacy, and intercultural competencies through experiential learning.";
+    return "We work with young people aged 18-30, including youth workers, volunteers, leaders, and activists. We focus on those not privileged and support their active involvement and participation in personal growth and community development.";
   }
   
   if (message.includes('coconutwork') || message.includes('network')) {

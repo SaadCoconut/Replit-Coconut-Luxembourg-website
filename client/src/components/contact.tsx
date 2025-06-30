@@ -190,12 +190,12 @@ export default function Contact() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="entrepreneurship">Entrepreneurship & Design Thinking</SelectItem>
-                          <SelectItem value="intercultural">Intercultural Learning & Peacebuilding</SelectItem>
-                          <SelectItem value="digital">Digital Youth Participation</SelectItem>
-                          <SelectItem value="environmental">Environmental Sustainability</SelectItem>
-                          <SelectItem value="youth-exchange">Youth Exchange Programs</SelectItem>
-                          <SelectItem value="training">Training Courses</SelectItem>
+                          <SelectItem value="design-thinking">Design Thinking & Entrepreneurship</SelectItem>
+                          <SelectItem value="digital-participation">Digital Participation</SelectItem>
+                          <SelectItem value="intercultural-dialogue">Intercultural Dialogue & Peace-building</SelectItem>
+                          <SelectItem value="sustainable-development">Sustainable Development</SelectItem>
+                          <SelectItem value="youth-workers">Youth Workers Training</SelectItem>
+                          <SelectItem value="non-formal-education">Non-formal Education Programs</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />

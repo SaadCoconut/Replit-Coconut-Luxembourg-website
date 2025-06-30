@@ -26,10 +26,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Programs</h4>
             <ul className="space-y-2 text-neutral-300">
-              <li><a href="#" className="hover:text-white transition-colors">Entrepreneurship & Design Thinking</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Intercultural Learning</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Digital Youth Participation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Environmental Sustainability</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Design Thinking & Entrepreneurship</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Digital Participation</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Intercultural Dialogue</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Sustainable Development</a></li>
             </ul>
           </div>
           

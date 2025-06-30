@@ -8,14 +8,14 @@ export default function About() {
           <div>
             <h2 className="text-4xl font-bold text-neutral-800 mb-6">About Coconut Luxembourg</h2>
             <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-              Coconut Luxembourg is part of the Coconutwork network - a European network of youth work organizations 
-              empowering Euro-Mediterranean youth through innovative non-formal education programs. We focus on 
-              developing skills relevant to community building and personal growth.
+              Coconut Luxembourg provides young people (18-30) with opportunities to get actively engaged in their own 
+              personal growth and development to fulfill their potential. We collaborate with youth and community 
+              organizations from Europe and neighboring countries to provide quality training and learning opportunities.
             </p>
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
-              Our approach combines workshops, youth exchanges, and training courses to help young people - 
-              especially NEETs and youth from migrant backgrounds - achieve their potential as aware global citizens 
-              with enhanced skills in entrepreneurship, digital literacy, and human rights education.
+              Our scope of work spans Luxembourg, EU and Euro-Mediterranean regions, with intercultural learning as one 
+              of our core values. We believe in non-formal education as a pillar of learning to include and grow the 
+              interest of young people, especially those who are not privileged.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-8">
@@ -41,12 +41,23 @@ export default function About() {
               className="rounded-xl shadow-lg w-full h-auto" 
             />
             
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h3 className="text-xl font-semibold text-neutral-800 mb-3">Our Mission</h3>
-              <p className="text-neutral-600">
-                To empower youth to grow personally and professionally while evolving their communities through 
-                active participation, bringing non-formal educational opportunities to young people from both urban and rural areas.
-              </p>
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h3 className="text-xl font-semibold text-neutral-800 mb-3">Our Mission</h3>
+                <p className="text-neutral-600">
+                  To empower youth to grow personally, in their careers, and evolve their community through active 
+                  participation and quality non-formal education opportunities.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl p-6 shadow-md">
+                <h3 className="text-xl font-semibold text-neutral-800 mb-3">Our Beliefs</h3>
+                <p className="text-neutral-600">
+                  We believe in improving quality standards of youth work by providing outstanding learning opportunities 
+                  for young people, especially those not privileged. Non-formal education is our pillar to include, 
+                  grow interest, and satisfy needs where formal education might have failed.
+                </p>
+              </div>
             </div>
           </div>
         </div>

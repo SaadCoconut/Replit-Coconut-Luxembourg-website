@@ -27,7 +27,7 @@ export default function Hero() {
             <span className="text-accent">Innovative Education</span>
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-            Creating opportunities for young people across Europe and the Euro-Mediterranean region through non-formal education, youth exchanges, and skills development programs.
+            Providing young people (18-30) with opportunities to get actively engaged in their personal growth and development. We support youth workers, volunteers, and activists across Europe and Euro-Mediterranean regions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
