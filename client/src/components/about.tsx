@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export default function About() {
   return (
     <section id="about" className="bg-neutral-50 py-20">
@@ -18,7 +16,7 @@ export default function About() {
               interest of young people, especially those who are not privileged.
             </p>
             
-            <div className="text-center mb-8">
+            <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-3xl font-bold text-primary">1,000+</span>
                 <span className="text-xl text-neutral-600">youth impacted from</span>
@@ -26,10 +24,6 @@ export default function About() {
                 <span className="text-xl text-neutral-600">countries</span>
               </div>
             </div>
-            
-            <Button className="bg-primary text-white hover:bg-blue-700 transition-colors">
-              Learn More About Our History
-            </Button>
           </div>
           
           <div className="space-y-6">
