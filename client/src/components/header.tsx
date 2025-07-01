@@ -22,19 +22,27 @@ export default function Header() {
       setLocation('/');
       // Wait a bit for the page to load, then scroll
       setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        scrollToSectionWithOffset(sectionId);
       }, 100);
     } else {
       // We're already on home page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      scrollToSectionWithOffset(sectionId);
     }
     setIsMenuOpen(false);
+  };
+
+  const scrollToSectionWithOffset = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = 80; // h-20 = 80px
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   const handlePageNavigation = () => {

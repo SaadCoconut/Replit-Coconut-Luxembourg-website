@@ -175,7 +175,14 @@ export default function ResourcesPage() {
     setTimeout(() => {
       const element = document.getElementById('contact');
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const headerHeight = 80; // h-20 = 80px
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     }, 100);
   };
