@@ -1,46 +1,32 @@
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Sophie Laurent",
-      title: "National Coordinator",
-      bio: "Youth work specialist with extensive experience in non-formal education and European project management. Expert in intercultural learning methodologies.",
-      fullDescription: "With over 10 years of experience in youth work and European cooperation, Sophie coordinates strategic activities for Coconut Luxembourg, ensuring alignment with our organizational mission. She oversees partnerships, implements long-term strategies, and coordinates Erasmus+ projects while maintaining active relationships with local and international partners. Sophie manages logistics and planning, conducting risk assessments for international projects and maintaining comprehensive documentation. She collaborates with the management board to ensure each project aligns with organizational objectives.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+      name: "Gilles Evrard Essuman",
+      title: "President of Coconut Luxembourg",
+      bio: "Doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation.",
+      fullDescription: "Gilles is a doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation. Minus his academic engagements where he researches and lectures, he also consults and trains on various youth work projects. Before moving to Luxembourg, he was actively engaged as a rapporteur and facilitator in several CoconutWork projects. The fantastic collaborations with the then team and people involved with the network led to the creation of CoconutWork Luxembourg to widen the network's impact across Europe. The aim is to empower the local Luxembourgish youth on issues related to community development, youth participation, and socio-entrepreneurial empowerment. Gilles sees the network as an important European hub to help EU youth develop themselves and gain the necessary skills to become active Europeans who are participants and not only observers.",
+      image: "@assets/Screenshot 2025-07-02 at 06.41.25_1751409722550.png"
     },
     {
-      name: "Alex Mueller", 
-      title: "Project Manager & Board Member",
-      bio: "Digital innovation advocate specializing in youth entrepreneurship and design thinking. Coordinates youth exchanges and training programs across the network.",
-      fullDescription: "With extensive experience in Erasmus+ and local educational projects, Alex Mueller contributes essentially to the Coconut Luxembourg team. His expertise spans diverse domains, including teambuilding, trainer training, and soft skills development, preparing competent and adaptable young leaders. Alex plays a central role in coordinating and evaluating projects, ensuring careful planning for participants' personal development. He also promotes inter-departmental collaboration, integrating resources and objectives to support the organization's desired impact.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+      name: "Fahd Mohammadi", 
+      title: "Coordinator and Project Manager of Coconutwork",
+      bio: "Youth worker and project manager with extensive experience in international research, training and innovation projects.",
+      fullDescription: "Fahd is a youth worker and project manager of numerous international research, training and innovation projects, particularly referent of the areas of entrepreneurial learning, intercultural dialogue, and youth participation. Fahd has managed dozens of European projects covering the programs of Erasmus+, Europe for citizens, ISFP, CERV, and other local initiatives and actions at the Euro-Mediterranean level. He has a solid knowledge in the management for youth events, cultural and recreational activities and experience in organizing in-service training courses and participation in youth organizations for developing innovative programs for youngsters' to stir their creativity. He holds a double Master degree in Entrepreneurship and International Business from the Universities of CUNY (City University of New York) and the University of Montpellier.",
+      image: "@assets/Screenshot 2025-07-02 at 06.41.43_1751409722549.png"
     },
     {
-      name: "Amira Ben Salem",
-      title: "Coordinator, Growth and Development Department", 
-      bio: "Expert in Euro-Mediterranean cooperation with a focus on building bridges between European and Mediterranean youth organizations and fostering cultural exchange.",
-      fullDescription: "With over 8 years of experience in Erasmus+ projects and an active role in the university environment, Amira Ben Salem is one of the strategic pillars of the organization, coordinating Coconut Luxembourg's educational initiatives to meet young people's needs and long-term objectives. With a vast network of international partnerships, Amira contributes to creating sustainable and relevant educational programs. Through her involvement in strategic development and adaptation to changes in the educational sector, Amira ensures the organization remains a benchmark for innovation. Her approach inspires the team and supports continuous personal and professional growth for all participants.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+      name: "Derrick S. Vormawor",
+      title: "Project Manager at Coconut Luxembourg",
+      bio: "Results-driven Project Management and Communications Professional with strong background in leading strategic initiatives across technology, business, and corporate sectors.",
+      fullDescription: "Derrick S. Vormawor is a results-driven Project Management and Communications Professional with a strong background in leading strategic initiatives across technology, business, and corporate sectors. With an MSc in Web and Data Science and a BSc in Banking and Finance, he combines analytical expertise with structured project execution to drive organizational success. As a Project Manager at Coconut Luxembourg, Derrick has extensive experience managing EU-funded projects, ensuring compliance with funding requirements, coordinating multinational teams, and delivering impactful results. His experience includes roles at Mercedes Benz Mobility, FEV Europe GmbH, and the University of Koblenz, where he specialized in internal communications, digital transformation, and stakeholder engagement.",
+      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
     },
     {
-      name: "Elena Cernat",
-      title: "Coordinator, Human Resources Department",
-      bio: "Elena is the heart of the Human Resources department at Coconut Luxembourg, with 5 years of HR experience already accumulated at just 26 years old.",
-      fullDescription: "Elena Cernat is the heart of the Human Resources department at Coconut Luxembourg, with 5 years of HR experience already accumulated at just 26 years old. Responsible for recruiting and selecting volunteers, she contributes essentially to organizational culture, managing each interaction with empathy and professionalism. Elena ensures a diverse and valuable team, identifying and developing each member's potential. With a balance between professionalism and human approach, she creates a collaborative and inspiring work environment, motivating the team to reach new standards of excellence.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
-    },
-    {
-      name: "Bianca Archip",
-      title: "Coordinator, Local Activities Department",
-      bio: "Bianca is the dedicated coordinator of the Local Activities Department, where she develops personal development initiatives for young people.",
-      fullDescription: "Bianca Archip is the dedicated coordinator of the Local Activities Department, where she develops personal development initiatives for young people. With a passion for non-formal education and community development, she brings a practical vision to each project, ensuring all activities have impact in local communities. With skills in organization and communication, Bianca creates captivating programs and establishes relationships with local partners. Through her commitment, she offers a safe and stimulating growth environment where young people can develop their skills and learn through experience.",
-      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
-    },
-    {
-      name: "Bogdan Ecobici",
-      title: "Coordinator Luxembourg Activities",
-      bio: "At 35, Bogdan is a valuable member of the Coconut Luxembourg team, coordinating activities in Luxembourg communities.",
-      fullDescription: "At 35 years old, Bogdan Ecobici is a valuable member of the Coconut Luxembourg team, coordinating activities in Luxembourg communities. Collaborating with local authorities, Bogdan offers young people educational experiences that promote diversity and inclusion, adapted to community needs. Bogdan has expertise in planning and facilitating interactive activities and is appreciated for attention to detail and ability to manage complex projects. Through his passion for non-formal education, he supports the personal development of young people in Luxembourg, helping them become active and engaged citizens.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+      name: "Rasa Liepina",
+      title: "Social Media Coordinator",
+      bio: "From Riga, Latvia, Rasa began her work with CoconutWork in early 2022 as an Erasmus+ project participant.",
+      fullDescription: "From Riga, Latvia, Rasa began her work with CoconutWork in early 2022 in her first-ever Erasmus+ project as a participant. Inspired by her upbringing and family, she embraced the early love of travel; she felt an international calling that led her to the UK—graduating from the University of Worcester in Media & Cultures. Alongside her main studies, she explored additional disciplines such as sociology, film, and sustainability, demonstrating a broad spectrum of interests. With a vintage camera, she captured her adventures in her first project and just four experiences later became part of the Coconut team. Rasa sees each day with Coconut as a fresh opportunity – a chance to embrace challenges, form connections, and create memories. With a camera, phone, and drone in hand, Rasa embodies the vibrant spirit of the team, capturing the spontaneous moments and the beauty of our projects.",
+      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
     }
   ];
 
