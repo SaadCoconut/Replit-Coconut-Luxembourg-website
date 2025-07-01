@@ -79,24 +79,24 @@ export default function Header() {
     <header className="bg-white shadow-sm border-b border-neutral-200 sticky top-0 z-40">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
+          <div className="flex items-center min-w-0 flex-1">
             <Link href="/" onClick={handlePageNavigation}>
               <div className="flex-shrink-0 flex items-center space-x-3 cursor-pointer">
                 <img 
                   src={logoPath} 
                   alt="Coconut Luxembourg Logo" 
-                  className="h-16 w-16 object-contain"
+                  className="h-12 w-12 object-contain flex-shrink-0"
                 />
-                <div className="flex flex-col">
-                  <h1 className="text-2xl font-bold text-primary leading-tight">Coconut Luxembourg</h1>
-                  <p className="text-sm text-neutral-600 font-medium">ASBL - Association Sans But Lucratif</p>
+                <div className="flex flex-col min-w-0">
+                  <h1 className="text-xl font-bold text-primary leading-tight whitespace-nowrap">Coconut Luxembourg</h1>
+                  <p className="text-xs text-neutral-600 font-medium whitespace-nowrap">ASBL - Association Sans But Lucratif</p>
                 </div>
               </div>
             </Link>
           </div>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+          <div className="hidden lg:block flex-shrink-0">
+            <div className="flex items-baseline space-x-4">
               <button
                 onClick={() => scrollToSection('home')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -172,7 +172,7 @@ export default function Header() {
             </div>
           </div>
           
-          <div className="md:hidden">
+          <div className="lg:hidden flex-shrink-0">
             <Button
               variant="ghost"
               size="sm"
@@ -186,7 +186,7 @@ export default function Header() {
         
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-neutral-200 py-4">
+          <div className="lg:hidden border-t border-neutral-200 py-4">
             <div className="flex flex-col space-y-2">
               <button
                 onClick={() => scrollToSection('home')}
