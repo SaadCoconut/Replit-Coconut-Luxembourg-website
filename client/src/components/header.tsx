@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Globe } from "lucide-react";
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logoPath from "@assets/Coco Luxembourg_1751327600427.jpg";
 import {
@@ -14,12 +14,30 @@ import {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const [location, setLocation] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // If we're not on the home page, navigate to home first
+    if (location !== '/') {
+      setLocation('/');
+      // Wait a bit for the page to load, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // We're already on home page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMenuOpen(false);
+  };
+
+  const handlePageNavigation = () => {
     setIsMenuOpen(false);
   };
 
@@ -28,14 +46,16 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center space-x-3">
-              <img 
-                src={logoPath} 
-                alt="Coconut Luxembourg Logo" 
-                className="h-12 w-12 object-contain"
-              />
-              <h1 className="text-2xl font-bold text-primary">Coconut Luxembourg</h1>
-            </div>
+            <Link href="/" onClick={handlePageNavigation}>
+              <div className="flex-shrink-0 flex items-center space-x-3 cursor-pointer">
+                <img 
+                  src={logoPath} 
+                  alt="Coconut Luxembourg Logo" 
+                  className="h-12 w-12 object-contain"
+                />
+                <h1 className="text-2xl font-bold text-primary">Coconut Luxembourg</h1>
+              </div>
+            </Link>
           </div>
           
           <div className="hidden md:block">
@@ -64,22 +84,22 @@ export default function Header() {
               >
                 {t('nav.impact')}
               </button>
-              <Link href="/local-initiatives">
+              <Link href="/local-initiatives" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
                   {t('nav.localInitiatives')}
                 </button>
               </Link>
-              <Link href="/resources">
+              <Link href="/resources" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
                   {t('nav.resources')}
                 </button>
               </Link>
-              <Link href="/partnerships">
+              <Link href="/partnerships" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
                   {t('nav.partners')}
                 </button>
               </Link>
-              <Link href="/team">
+              <Link href="/team" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
                   Team
                 </button>
@@ -156,35 +176,23 @@ export default function Header() {
               >
                 {t('nav.impact')}
               </button>
-              <Link href="/local-initiatives">
-                <button 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-                >
+              <Link href="/local-initiatives" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
                   {t('nav.localInitiatives')}
                 </button>
               </Link>
-              <Link href="/resources">
-                <button 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-                >
+              <Link href="/resources" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
                   {t('nav.resources')}
                 </button>
               </Link>
-              <Link href="/partnerships">
-                <button 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-                >
+              <Link href="/partnerships" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
                   {t('nav.partners')}
                 </button>
               </Link>
-              <Link href="/team">
-                <button 
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-                >
+              <Link href="/team" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
                   Team
                 </button>
               </Link>
