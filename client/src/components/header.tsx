@@ -141,12 +141,11 @@ export default function Header() {
                   Team
                 </button>
               </Link>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {t('nav.contact')}
-              </button>
+              <Link href="/contact" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+                  {t('nav.contact')}
+                </button>
+              </Link>
               
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -233,12 +232,11 @@ export default function Header() {
                   Team
                 </button>
               </Link>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-              >
-                {t('nav.contact')}
-              </button>
+              <Link href="/contact" onClick={handlePageNavigation}>
+                <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
+                  {t('nav.contact')}
+                </button>
+              </Link>
               
               <div className="px-3 py-2">
                 <div className="flex flex-wrap gap-2">
