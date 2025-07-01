@@ -26,12 +26,14 @@ export default function About() {
               <div className="flex flex-col items-center space-y-6">
                 {/* Luxembourg - Starting Point */}
                 <div className="relative">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="text-center text-white">
-                      <svg className="w-6 h-6 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  <div className="w-32 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg p-4">
+                    <div className="text-center">
+                      {/* Luxembourg Map SVG */}
+                      <svg className="w-16 h-12 mx-auto mb-1" viewBox="0 0 60 40" fill="white">
+                        <path d="M15 8 L45 8 L45 32 L15 32 Z M20 12 L40 12 L40 28 L20 28 Z" fill="white" stroke="white" strokeWidth="1"/>
+                        <circle cx="30" cy="20" r="2" fill="white"/>
                       </svg>
-                      <div className="text-xs font-bold">Luxembourg</div>
+                      <div className="text-xs font-bold text-white">Luxembourg</div>
                     </div>
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm font-medium text-neutral-600 bg-white px-2 py-1 rounded shadow">Home Base</div>
@@ -47,10 +49,21 @@ export default function About() {
 
                 {/* EU Level */}
                 <div className="relative">
-                  <div className="w-32 h-20 bg-gradient-to-r from-primary/20 to-primary/10 rounded-xl flex items-center justify-center border-2 border-primary/30">
+                  <div className="w-48 h-32 bg-gradient-to-r from-primary/20 to-primary/10 rounded-xl flex items-center justify-center border-2 border-primary/30 p-4">
                     <div className="text-center">
-                      <svg className="w-8 h-8 mx-auto mb-1 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      {/* European Union Map SVG */}
+                      <svg className="w-32 h-20 mx-auto mb-1" viewBox="0 0 120 80" fill="none">
+                        {/* Simplified Europe outline */}
+                        <path d="M20 25 Q30 15 45 20 Q60 18 75 25 Q90 22 100 30 L105 45 Q100 60 85 65 Q70 70 55 68 Q40 70 25 65 Q15 55 20 40 Z" 
+                              fill="rgb(133, 77, 14)" stroke="rgb(133, 77, 14)" strokeWidth="1" opacity="0.8"/>
+                        {/* Luxembourg highlighted */}
+                        <circle cx="55" cy="40" r="3" fill="rgb(133, 77, 14)"/>
+                        {/* EU stars pattern */}
+                        <circle cx="35" cy="35" r="1" fill="rgb(133, 77, 14)"/>
+                        <circle cx="45" cy="30" r="1" fill="rgb(133, 77, 14)"/>
+                        <circle cx="65" cy="32" r="1" fill="rgb(133, 77, 14)"/>
+                        <circle cx="75" cy="40" r="1" fill="rgb(133, 77, 14)"/>
+                        <circle cx="80" cy="50" r="1" fill="rgb(133, 77, 14)"/>
                       </svg>
                       <div className="text-sm font-bold text-primary">European Union</div>
                     </div>
@@ -67,10 +80,30 @@ export default function About() {
 
                 {/* Euro-Mediterranean Level */}
                 <div className="relative">
-                  <div className="w-40 h-20 bg-gradient-to-r from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center border-2 border-secondary/30">
+                  <div className="w-56 h-36 bg-gradient-to-r from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center border-2 border-secondary/30 p-4">
                     <div className="text-center">
-                      <svg className="w-8 h-8 mx-auto mb-1 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      {/* Euro-Mediterranean Map SVG */}
+                      <svg className="w-40 h-24 mx-auto mb-1" viewBox="0 0 140 90" fill="none">
+                        {/* Europe (simplified) */}
+                        <path d="M20 15 Q35 5 55 12 Q75 8 95 18 Q110 15 120 25 L125 35 Q120 45 105 50 Q85 55 65 52 Q45 55 25 50 Q10 40 15 25 Z" 
+                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                        
+                        {/* Mediterranean Sea */}
+                        <ellipse cx="70" cy="55" rx="45" ry="8" fill="rgb(34, 139, 34)" opacity="0.3"/>
+                        
+                        {/* North Africa */}
+                        <path d="M15 60 Q40 58 70 62 Q100 60 130 65 L135 75 Q110 80 80 78 Q50 82 20 78 Q5 70 10 65 Z" 
+                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                        
+                        {/* Middle East */}
+                        <path d="M120 30 Q130 28 138 35 L140 50 Q135 60 125 58 Q115 55 115 45 Q118 35 120 30 Z" 
+                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                        
+                        {/* Key cities/regions marked */}
+                        <circle cx="55" cy="35" r="2" fill="rgb(34, 139, 34)"/> {/* Luxembourg area */}
+                        <circle cx="40" cy="65" r="1.5" fill="rgb(34, 139, 34)"/> {/* Morocco */}
+                        <circle cx="85" cy="70" r="1.5" fill="rgb(34, 139, 34)"/> {/* Tunisia */}
+                        <circle cx="125" cy="45" r="1.5" fill="rgb(34, 139, 34)"/> {/* Turkey */}
                       </svg>
                       <div className="text-sm font-bold text-secondary">Euro-Mediterranean</div>
                     </div>
