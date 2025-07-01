@@ -85,7 +85,7 @@ export default function Header() {
                 <img 
                   src={logoPath} 
                   alt="Coconut Luxembourg Logo" 
-                  className="h-12 w-12 object-contain"
+                  className="h-16 w-16 object-contain"
                 />
                 <div className="flex flex-col">
                   <h1 className="text-2xl font-bold text-primary leading-tight">Coconut Luxembourg</h1>
