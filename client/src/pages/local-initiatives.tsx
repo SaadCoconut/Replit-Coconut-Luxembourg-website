@@ -87,16 +87,6 @@ export default function LocalInitiativesPage() {
     <div className="min-h-screen bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <Link href="/">
-            <Button 
-              variant="ghost" 
-              className="mb-4"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-          
           <h1 className="text-4xl font-bold text-neutral-800 mb-4">
             Local Initiatives
           </h1>

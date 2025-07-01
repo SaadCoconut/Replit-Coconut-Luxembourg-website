@@ -1,6 +1,3 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-
 export default function TeamPage() {
   const teamMembers = [
     {
@@ -48,17 +45,14 @@ export default function TeamPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <Header />
-      
-      <main className="pt-24 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-neutral-800 mb-6">Our Team</h1>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Coconut Luxembourg is supported by a dedicated team with vast experience in non-formal education and youth projects.
-            </p>
-          </div>
+    <div className="pt-24 pb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold text-neutral-800 mb-6">Our Team</h1>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Coconut Luxembourg is supported by a dedicated team with vast experience in non-formal education and youth projects.
+          </p>
+        </div>
           
           <div className="space-y-20">
             {teamMembers.map((member, index) => (
@@ -87,11 +81,8 @@ export default function TeamPage() {
                 </div>
               </div>
             ))}
-          </div>
         </div>
-      </main>
-      
-      <Footer />
+      </div>
     </div>
   );
 }

@@ -102,6 +102,7 @@ This is a full-stack web application for Coconut Luxembourg, part of the Coconut
 - June 30, 2025: Added Resources section - comprehensive document library organized by categories (Annual Reports, Guidelines & Procedures, Policies & Standards, Media Kit) with download functionality for organizational transparency and partner collaboration
 - June 30, 2025: Added Partnerships section - professional partner showcase organized by categories (Funding Partners, Institutional Partners, Network Partners, Local Partners) with interactive logo grid, external links, and partnership opportunities call-to-action
 - June 30, 2025: Redesigned website color scheme based on Coconut Luxembourg logo - updated primary colors to warm brown (HSL 28, 45%, 35%) from coconut shell as main theme, secondary green (HSL 127, 50%, 40%) for accents, plus grey elements for balance; increased header height to h-20 and logo size to 12x12 for better visibility
+- July 1, 2025: Moved Header and Footer components to main App component for consistent display across all pages - ensures uniform navigation and branding; removed "Back to Home" buttons from all pages for cleaner navigation; added "ASBL - Association Sans But Lucratif" under organization name in header; increased logo size to h-16 w-16 for better visibility
 
 ## User Preferences
 
