@@ -2,6 +2,7 @@ import { useRoute, Link } from "wouter";
 import { ArrowLeft, ExternalLink, Calendar, Users, Target, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import SocialMediaWall from "@/components/social-media-wall";
 
 interface Project {
   id: string;
@@ -16,6 +17,7 @@ interface Project {
   fundingProgram: string;
   image: string;
   infopackUrl: string;
+  hashtags: string[];
 }
 
 const projects: Record<string, Project[]> = {
@@ -37,7 +39,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-1-LU01-KA210-YOU-000255419",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/designyouth/"
+      infopackUrl: "https://coconutwork.org/portfolio/designyouth/",
+      hashtags: ["DesignYouthFuture", "ErasmusPlus", "DesignThinking", "YouthEmpowerment", "Innovation"]
     },
     {
       id: "mind-your-business",
@@ -56,7 +59,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2023-1-LU01-KA152-YOU-000034567",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusiness-2/"
+      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusiness-2/",
+      hashtags: ["MindYourBusiness", "ErasmusPlus", "YoungEntrepreneurs", "StartupLife", "BusinessDevelopment"]
     },
     {
       id: "mindyourbusiness-plus",
@@ -75,7 +79,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-1-LU01-KA152-YOU-000045678",
       fundingProgram: "Erasmus+",
       image: "@assets/Screenshot 2025-07-01 at 07.08.04_1751324889604.png",
-      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusinessplus/"
+      infopackUrl: "https://coconutwork.org/portfolio/mindyourbusinessplus/",
+      hashtags: ["MindYourBusinessPlus", "AdvancedEntrepreneurship", "DigitalMarketing", "BusinessStrategy", "ErasmusPlus"]
     },
     {
       id: "enviropreneurs-generation",
@@ -94,7 +99,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2021-1-LU01-KA152-YOU-000021521",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/enviropreneursgeneration/"
+      infopackUrl: "https://coconutwork.org/portfolio/enviropreneursgeneration/",
+      hashtags: ["EnviropreneurasGeneration", "GreenEntrepreneurship", "RuralInnovation", "EcoSolutions", "SustainableBusiness"]
     }
   ],
   "digital-participation": [
@@ -115,7 +121,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2020-2-LU01-KA105-063297",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/digiton/"
+      infopackUrl: "https://coconutwork.org/portfolio/digiton/",
+      hashtags: ["DigitON", "DigitalParticipation", "CivicEngagement", "EU2020", "MediaLiteracy"]
     },
     {
       id: "electrick",
@@ -134,7 +141,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-1-LU01-KA152-YOU-000067890",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/electrick/"
+      infopackUrl: "https://coconutwork.org/portfolio/electrick/",
+      hashtags: ["ElecTrick", "EuropeanElections", "YouthVote", "DigitalDemocracy", "PoliticalEngagement"]
     },
     {
       id: "electrick-plus",
@@ -153,7 +161,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-2-LU01-KA152-YOU-000078901",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/electrickplus/"
+      infopackUrl: "https://coconutwork.org/portfolio/electrickplus/",
+      hashtags: ["ElecTrickPlus", "AdvancedDemocracy", "PeerEducation", "DigitalAdvocacy", "SustainableEngagement"]
     }
   ],
   "intercultural-dialogue": [
@@ -176,7 +185,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2021-1-LU01-KA152-YOU-000021467",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/pontsdetolerance/"
+      infopackUrl: "https://coconutwork.org/portfolio/pontsdetolerance/",
+      hashtags: ["PontsDeTolerance", "InterculturalDialogue", "Tolerance", "AntiHate", "SocialCohesion"]
     },
     {
       id: "couscous-rolls",
@@ -195,7 +205,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2023-1-LU01-KA152-YOU-000056789",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/couscousrolls/"
+      infopackUrl: "https://coconutwork.org/portfolio/couscousrolls/",
+      hashtags: ["CouscousRolls", "GenderEquality", "CulturalDiversity", "FeministActivism", "InterculturalDialogue"]
     },
     {
       id: "questioning-migration",
@@ -214,7 +225,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2022-1-LU01-KA152-YOU-000045672",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/questioningmigration/"
+      infopackUrl: "https://coconutwork.org/portfolio/questioningmigration/",
+      hashtags: ["QuestioningMigration", "MigrationAwareness", "SocialInclusion", "AntiXenophobia", "HumanRights"]
     },
     {
       id: "stop-bullying",
@@ -233,7 +245,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2023-1-LU01-KA152-YOU-000067834",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/stopbullying/"
+      infopackUrl: "https://coconutwork.org/portfolio/stopbullying/",
+      hashtags: ["StopBullying", "AntiViolence", "PeerSupport", "SafeSpaces", "YouthProtection"]
     }
   ],
   "sustainable-development": [
@@ -254,7 +267,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2022-1-LU01-KA152-YOU-000034512",
       fundingProgram: "Erasmus+",
       image: "https://coconutwork.org/wp-content/uploads/2022/04/Its-a-Water-Matter.png",
-      infopackUrl: "https://coconutwork.org/portfolio/watermatter/"
+      infopackUrl: "https://coconutwork.org/portfolio/watermatter/",
+      hashtags: ["WaterMatter", "WaterConservation", "EnvironmentalAction", "SustainableWater", "BlueGold"]
     },
     {
       id: "demogreen",
@@ -273,7 +287,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-1-LU01-KA152-YOU-000078945",
       fundingProgram: "Erasmus+",
       image: "https://coconutwork.org/wp-content/uploads/2024/05/DemoGreen.png",
-      infopackUrl: "https://coconutwork.org/portfolio/demogreen/"
+      infopackUrl: "https://coconutwork.org/portfolio/demogreen/",
+      hashtags: ["DemoGreen", "GreenDemocracy", "EnvironmentalGovernance", "YouthAdvocacy", "SustainablePolitics"]
     },
     {
       id: "mindful-youth",
@@ -292,7 +307,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2024-1-LU01-KA152-YOU-000089012",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/mindfulyouth/"
+      infopackUrl: "https://coconutwork.org/portfolio/mindfulyouth/",
+      hashtags: ["MindfulYouth", "Mindfulness", "SustainableLiving", "EnvironmentalWellbeing", "YouthMindfulness"]
     },
     {
       id: "empact3",
@@ -311,7 +327,8 @@ const projects: Record<string, Project[]> = {
       europeanNumber: "2023-1-LU01-KA152-YOU-000067823",
       fundingProgram: "Erasmus+",
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      infopackUrl: "https://coconutwork.org/portfolio/empact3/"
+      infopackUrl: "https://coconutwork.org/portfolio/empact3/",
+      hashtags: ["EmpACT3", "ClimateAction", "YouthActivism", "EnvironmentalActivism", "ClimateJustice"]
     }
   ]
 };
@@ -419,6 +436,14 @@ export default function ProjectsPage() {
                     </Button>
                   </div>
                 </div>
+              </div>
+              
+              {/* Social Media Wall Section */}
+              <div className="px-8 pb-8">
+                <SocialMediaWall 
+                  projectTitle={project.title}
+                  hashtags={project.hashtags}
+                />
               </div>
             </div>
           ))}
