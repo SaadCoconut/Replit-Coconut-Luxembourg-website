@@ -15,84 +15,104 @@ export default function About() {
           </div>
         </div>
 
-        {/* Geographic Scope and Values Visualization */}
+        {/* Geographic Scope Visualization - Vertical Flow */}
         <div className="mb-16">
-          <div className="relative max-w-5xl mx-auto">
-            {/* Central Map Area */}
-            <div className="flex items-center justify-center mb-8">
-              <div className="relative">
-                {/* Luxembourg Center */}
-                <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg relative z-10">
-                  <div className="text-center text-white">
-                    <svg className="w-8 h-8 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <div className="text-sm font-bold">Luxembourg</div>
+          {/* Our Reach Section */}
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-neutral-800 mb-8">Our Geographic Reach</h3>
+            
+            {/* Vertical Geographic Flow */}
+            <div className="max-w-3xl mx-auto">
+              <div className="flex flex-col items-center space-y-6">
+                {/* Luxembourg - Starting Point */}
+                <div className="relative">
+                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="text-center text-white">
+                      <svg className="w-6 h-6 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                      </svg>
+                      <div className="text-xs font-bold">Luxembourg</div>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm font-medium text-neutral-600 bg-white px-2 py-1 rounded shadow">Home Base</div>
+                </div>
+
+                {/* Connecting Arrow */}
+                <div className="flex flex-col items-center">
+                  <div className="w-0.5 h-8 bg-gradient-to-b from-primary to-secondary"></div>
+                  <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                  </svg>
+                </div>
+
+                {/* EU Level */}
+                <div className="relative">
+                  <div className="w-32 h-20 bg-gradient-to-r from-primary/20 to-primary/10 rounded-xl flex items-center justify-center border-2 border-primary/30">
+                    <div className="text-center">
+                      <svg className="w-8 h-8 mx-auto mb-1 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                      <div className="text-sm font-bold text-primary">European Union</div>
+                    </div>
                   </div>
                 </div>
 
-                {/* Connecting Lines */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-80 h-80 rounded-full border-2 border-dashed border-primary/30"></div>
+                {/* Connecting Arrow */}
+                <div className="flex flex-col items-center">
+                  <div className="w-0.5 h-8 bg-gradient-to-b from-primary to-secondary"></div>
+                  <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                  </svg>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-96 h-96 rounded-full border-2 border-dashed border-secondary/20"></div>
+
+                {/* Euro-Mediterranean Level */}
+                <div className="relative">
+                  <div className="w-40 h-20 bg-gradient-to-r from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center border-2 border-secondary/30">
+                    <div className="text-center">
+                      <svg className="w-8 h-8 mx-auto mb-1 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                      <div className="text-sm font-bold text-secondary">Euro-Mediterranean</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Surrounding Value Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* EU Reach */}
-              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
-                <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-neutral-800">EU Reach</h3>
-                </div>
-                <p className="text-sm text-neutral-600">Connecting with European Union countries through collaborative youth programs</p>
-              </div>
-
-              {/* Euro-Mediterranean */}
-              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-secondary">
-                <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-neutral-800">Mediterranean</h3>
-                </div>
-                <p className="text-sm text-neutral-600">Building bridges across Euro-Mediterranean regions for cultural exchange</p>
-              </div>
-
+          {/* Core Values Section */}
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-neutral-800 mb-8">Our Core Values & Approach</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Intercultural Learning */}
-              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
-                <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                    <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-6h2.5l6 6H4zm16.5-9.5L19 10l-2.5-1.5L15 10l-1.5-1.5L12 10l-1.5-1.5L9 10l-2.5-1.5L5 10l-1.5-1.5L2 10v8h20v-8l-1.5-1.5z"/>
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-800">Intercultural Learning</h3>
+                  <h4 className="text-xl font-bold text-neutral-800 mb-3">Intercultural Learning</h4>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Our core value fostering understanding and collaboration between diverse cultures across our regions
+                  </p>
                 </div>
-                <p className="text-sm text-neutral-600">Our core value fostering understanding between diverse cultures</p>
               </div>
 
               {/* Non-formal Education */}
-              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-secondary">
-                <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
-                    <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 border border-secondary/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+                    <svg className="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-800">Non-formal Education</h3>
+                  <h4 className="text-xl font-bold text-neutral-800 mb-3">Non-formal Education</h4>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Our pillar for including and empowering underserved youth through innovative learning approaches
+                  </p>
                 </div>
-                <p className="text-sm text-neutral-600">Empowering underserved youth through innovative learning approaches</p>
               </div>
             </div>
           </div>
