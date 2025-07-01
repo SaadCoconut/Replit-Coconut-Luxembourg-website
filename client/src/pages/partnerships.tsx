@@ -1,6 +1,7 @@
 import { ArrowLeft, Download, ExternalLink, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link, useLocation } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -199,6 +200,18 @@ const countries = [
 
 export default function PartnershipsPage() {
   const { toast } = useToast();
+  const [, setLocation] = useLocation();
+
+  const handleContactNavigation = () => {
+    setLocation('/');
+    // Wait for navigation to complete, then scroll to contact
+    setTimeout(() => {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   const form = useForm<PartnershipFormData>({
     resolver: zodResolver(partnershipFormSchema),
@@ -255,14 +268,15 @@ export default function PartnershipsPage() {
     <div className="min-h-screen bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <Button 
-            variant="ghost" 
-            onClick={() => window.history.back()}
-            className="mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Button>
+          <Link href="/">
+            <Button 
+              variant="ghost" 
+              className="mb-4"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
           
           <h1 className="text-4xl font-bold text-neutral-800 mb-4">
             Our Partners
@@ -490,10 +504,7 @@ export default function PartnershipsPage() {
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                window.history.back();
-              }}
+              onClick={handleContactNavigation}
             >
               Contact Us
             </Button>

@@ -2,6 +2,7 @@ import { ArrowLeft, Download, FileText, Calendar, Shield, Image, Book } from "lu
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link, useLocation } from "wouter";
 
 interface Resource {
   id: string;
@@ -165,7 +166,19 @@ const categoryInfo = {
 };
 
 export default function ResourcesPage() {
+  const [, setLocation] = useLocation();
   const categories = Object.keys(categoryInfo) as Array<keyof typeof categoryInfo>;
+
+  const handleContactNavigation = () => {
+    setLocation('/');
+    // Wait for navigation to complete, then scroll to contact
+    setTimeout(() => {
+      const element = document.getElementById('contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   const getResourcesByCategory = (category: string) => {
     return resources.filter(resource => resource.category === category);
@@ -181,14 +194,15 @@ export default function ResourcesPage() {
     <div className="min-h-screen bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <Button 
-            variant="ghost" 
-            onClick={() => window.history.back()}
-            className="mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Button>
+          <Link href="/">
+            <Button 
+              variant="ghost" 
+              className="mb-4"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
           
           <h1 className="text-4xl font-bold text-neutral-800 mb-4">
             Resources
@@ -275,10 +289,7 @@ export default function ResourcesPage() {
               </p>
               <Button 
                 className="bg-blue-600 text-white hover:bg-blue-700"
-                onClick={() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                  window.history.back();
-                }}
+                onClick={handleContactNavigation}
               >
                 Contact Us
               </Button>

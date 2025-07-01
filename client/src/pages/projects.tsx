@@ -1,4 +1,4 @@
-import { useRoute } from "wouter";
+import { useRoute, Link } from "wouter";
 import { ArrowLeft, ExternalLink, Calendar, Users, Target, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -333,14 +333,15 @@ export default function ProjectsPage() {
     <div className="min-h-screen bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <Button 
-            variant="ghost" 
-            onClick={() => window.history.back()}
-            className="mb-4"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Button>
+          <Link href="/">
+            <Button 
+              variant="ghost" 
+              className="mb-4"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
           
           <h1 className="text-4xl font-bold text-neutral-800 mb-4">
             {categoryName} Projects
