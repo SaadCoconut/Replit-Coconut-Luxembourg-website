@@ -34,19 +34,32 @@ export default function Header() {
   const scrollToSectionWithOffset = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      // Get the element's position relative to the document
-      const rect = element.getBoundingClientRect();
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const elementTop = rect.top + scrollTop;
+      // Mobile-optimized scroll behavior
+      const isMobile = window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       
-      // Account for header height (h-20 = 80px) plus some padding
-      const headerOffset = 90;
-      const targetPosition = elementTop - headerOffset;
+      if (isMobile) {
+        // For mobile, use a larger offset and different calculation
+        const headerOffset = 120; // More space on mobile
+        const elementTop = element.offsetTop;
+        const targetPosition = elementTop - headerOffset;
 
-      window.scrollTo({
-        top: Math.max(0, targetPosition),
-        behavior: 'smooth'
-      });
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: 'smooth'
+        });
+      } else {
+        // Desktop behavior
+        const rect = element.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const elementTop = rect.top + scrollTop;
+        const headerOffset = 90;
+        const targetPosition = elementTop - headerOffset;
+
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
