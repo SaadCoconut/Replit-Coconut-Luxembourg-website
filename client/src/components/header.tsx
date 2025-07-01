@@ -87,7 +87,10 @@ export default function Header() {
                   alt="Coconut Luxembourg Logo" 
                   className="h-12 w-12 object-contain"
                 />
-                <h1 className="text-2xl font-bold text-primary">Coconut Luxembourg</h1>
+                <div className="flex flex-col">
+                  <h1 className="text-2xl font-bold text-primary leading-tight">Coconut Luxembourg</h1>
+                  <p className="text-sm text-neutral-600 font-medium">ASBL</p>
+                </div>
               </div>
             </Link>
           </div>
