@@ -26,11 +26,11 @@ export default function ImpactMetrics() {
   ];
 
   return (
-    <section id="impact" className="bg-gradient-to-r from-primary to-green-700 text-white py-20">
+    <section id="impact" className="bg-gradient-to-r from-primary to-amber-800 text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('impact.title')}</h2>
-          <p className="text-xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-xl text-amber-100 max-w-3xl mx-auto">
             {t('impact.description')}
           </p>
         </div>

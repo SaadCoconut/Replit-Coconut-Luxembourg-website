@@ -26,13 +26,13 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-neutral-200 sticky top-0 z-40">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center space-x-3">
               <img 
                 src={logoPath} 
                 alt="Coconut Luxembourg Logo" 
-                className="h-10 w-10 object-contain"
+                className="h-12 w-12 object-contain"
               />
               <h1 className="text-2xl font-bold text-primary">Coconut Luxembourg</h1>
             </div>

@@ -101,7 +101,7 @@ This is a full-stack web application for Coconut Luxembourg, part of the Coconut
 - June 30, 2025: Added Local Initiatives section - dedicated page showcasing local community activities and articles with sample content covering youth leadership, digital skills training, environmental action, and intercultural dialogue events in Luxembourg cities
 - June 30, 2025: Added Resources section - comprehensive document library organized by categories (Annual Reports, Guidelines & Procedures, Policies & Standards, Media Kit) with download functionality for organizational transparency and partner collaboration
 - June 30, 2025: Added Partnerships section - professional partner showcase organized by categories (Funding Partners, Institutional Partners, Network Partners, Local Partners) with interactive logo grid, external links, and partnership opportunities call-to-action
-- June 30, 2025: Redesigned website color scheme based on Coconut Luxembourg logo - updated primary colors to vibrant green (HSL 127, 68%, 45%) from logo leaves and secondary brown (HSL 28, 45%, 35%) from coconut shell, applied throughout UI components and gradients
+- June 30, 2025: Redesigned website color scheme based on Coconut Luxembourg logo - updated primary colors to warm brown (HSL 28, 45%, 35%) from coconut shell as main theme, secondary green (HSL 127, 50%, 40%) for accents, plus grey elements for balance; increased header height to h-20 and logo size to 12x12 for better visibility
 
 ## User Preferences
 

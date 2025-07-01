@@ -10,21 +10,21 @@ export default function Programs() {
     {
       icon: Lightbulb,
       title: t('programs.designThinking.title'),
-      bgColor: "bg-green-600",
+      bgColor: "bg-amber-800",
       textColor: "text-white",
       route: "design-thinking"
     },
     {
       icon: Heart,
       title: t('programs.intercultural.title'), 
-      bgColor: "bg-green-700",
+      bgColor: "bg-amber-700",
       textColor: "text-white",
       route: "intercultural-dialogue"
     },
     {
       icon: Wifi,
       title: t('programs.digital.title'),
-      bgColor: "bg-green-500", 
+      bgColor: "bg-slate-600", 
       textColor: "text-white",
       route: "digital-participation"
     },
