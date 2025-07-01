@@ -104,12 +104,6 @@ export default function Header() {
                 {t('nav.home')}
               </button>
               <button
-                onClick={() => scrollToSection('about')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {t('nav.about')}
-              </button>
-              <button
                 onClick={() => scrollToSection('programs')}
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
@@ -187,12 +181,6 @@ export default function Header() {
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
                 {t('nav.home')}
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-              >
-                {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection('programs')}
