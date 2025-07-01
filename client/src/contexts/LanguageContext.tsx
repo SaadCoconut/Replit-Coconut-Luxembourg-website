@@ -246,7 +246,7 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>('en');
+  const [language, setLanguageState] = useState<Language>('lb');
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem('coconut-language') as Language;

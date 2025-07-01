@@ -153,7 +153,7 @@ export default function Header() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem onClick={() => setLanguage('en')}>
-                    <span className="mr-2">🇺🇸</span>English
+                    <span className="mr-2">🇬🇧</span>English
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => setLanguage('fr')}>
                     <span className="mr-2">🇫🇷</span>Français
