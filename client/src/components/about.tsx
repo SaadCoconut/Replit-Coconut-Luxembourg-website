@@ -17,20 +17,7 @@ export default function About() {
 
 
 
-        {/* Impact Stats */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-16">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-primary mb-2">1,000+</div>
-              <div className="text-lg text-neutral-600 font-medium">{t('about.impactNumbers')}</div>
-            </div>
-            <div className="hidden md:block w-px h-16 bg-neutral-200"></div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-secondary mb-2">20+</div>
-              <div className="text-lg text-neutral-600 font-medium">{t('about.countries')}</div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Mission and Beliefs Cards */}
         <div className="grid md:grid-cols-2 gap-8">
