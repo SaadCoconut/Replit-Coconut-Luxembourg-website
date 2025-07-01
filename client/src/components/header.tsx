@@ -115,12 +115,6 @@ export default function Header() {
               >
                 {t('nav.programs')}
               </button>
-              <button
-                onClick={() => scrollToSection('impact')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                {t('nav.impact')}
-              </button>
               <Link href="/local-initiatives" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
                   {t('nav.localInitiatives')}
@@ -205,12 +199,6 @@ export default function Header() {
                 className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
               >
                 {t('nav.programs')}
-              </button>
-              <button
-                onClick={() => scrollToSection('impact')}
-                className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left"
-              >
-                {t('nav.impact')}
               </button>
               <Link href="/local-initiatives" onClick={handlePageNavigation}>
                 <button className="text-neutral-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors text-left">
