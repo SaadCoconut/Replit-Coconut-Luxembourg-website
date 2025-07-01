@@ -26,12 +26,6 @@ export default function About() {
           </div>
           
           <div className="space-y-6">
-            <img 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500" 
-              alt="Team collaboration meeting" 
-              className="rounded-xl shadow-lg w-full h-auto" 
-            />
-            
             <div className="space-y-6">
               <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group">
                 <div className="flex items-start space-x-4">
