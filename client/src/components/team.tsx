@@ -4,25 +4,25 @@ export default function Team() {
       name: "Gilles Evrard Essuman",
       title: "President of Coconut Luxembourg",
       bio: "Doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation. Previously engaged as a rapporteur and facilitator in several CoconutWork projects, he led the creation of CoconutWork Luxembourg to widen the network's impact across Europe.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.25_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
       name: "Fahd Mohammadi", 
       title: "Coordinator and Project Manager of Coconutwork",
       bio: "Youth worker and project manager with extensive experience in international research, training and innovation projects. Expert in entrepreneurial learning, intercultural dialogue, and youth participation. Holds double Master degrees in Entrepreneurship and International Business from Universities of CUNY and University of Montpellier.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.43_1751409722549.png"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
       name: "Derrick S. Vormawor",
       title: "Project Manager at Coconut Luxembourg",
       bio: "Results-driven Project Management and Communications Professional with strong background in leading strategic initiatives across technology, business, and corporate sectors. With an MSc in Web and Data Science and a BSc in Banking and Finance, he combines analytical expertise with structured project execution to drive organizational success.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     },
     {
       name: "Rasa Liepina",
       title: "Social Media Coordinator",
       bio: "From Riga, Latvia, Rasa began her work with CoconutWork in early 2022 as an Erasmus+ project participant. Inspired by her upbringing and family, she embraced the love of travel and felt an international calling that led her to the UK, graduating from the University of Worcester in Media & Cultures. With a vintage camera, she captures adventures and embodies the vibrant spirit of the team.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
     }
   ];
 

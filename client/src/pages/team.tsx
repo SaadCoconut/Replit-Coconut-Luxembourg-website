@@ -5,28 +5,28 @@ export default function TeamPage() {
       title: "President of Coconut Luxembourg",
       bio: "Doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation.",
       fullDescription: "Gilles is a doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation. Minus his academic engagements where he researches and lectures, he also consults and trains on various youth work projects. Before moving to Luxembourg, he was actively engaged as a rapporteur and facilitator in several CoconutWork projects. The fantastic collaborations with the then team and people involved with the network led to the creation of CoconutWork Luxembourg to widen the network's impact across Europe. The aim is to empower the local Luxembourgish youth on issues related to community development, youth participation, and socio-entrepreneurial empowerment. Gilles sees the network as an important European hub to help EU youth develop themselves and gain the necessary skills to become active Europeans who are participants and not only observers.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.25_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
     },
     {
       name: "Fahd Mohammadi", 
       title: "Coordinator and Project Manager of Coconutwork",
       bio: "Youth worker and project manager with extensive experience in international research, training and innovation projects.",
       fullDescription: "Fahd is a youth worker and project manager of numerous international research, training and innovation projects, particularly referent of the areas of entrepreneurial learning, intercultural dialogue, and youth participation. Fahd has managed dozens of European projects covering the programs of Erasmus+, Europe for citizens, ISFP, CERV, and other local initiatives and actions at the Euro-Mediterranean level. He has a solid knowledge in the management for youth events, cultural and recreational activities and experience in organizing in-service training courses and participation in youth organizations for developing innovative programs for youngsters' to stir their creativity. He holds a double Master degree in Entrepreneurship and International Business from the Universities of CUNY (City University of New York) and the University of Montpellier.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.43_1751409722549.png"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
     },
     {
       name: "Derrick S. Vormawor",
       title: "Project Manager at Coconut Luxembourg",
       bio: "Results-driven Project Management and Communications Professional with strong background in leading strategic initiatives across technology, business, and corporate sectors.",
       fullDescription: "Derrick S. Vormawor is a results-driven Project Management and Communications Professional with a strong background in leading strategic initiatives across technology, business, and corporate sectors. With an MSc in Web and Data Science and a BSc in Banking and Finance, he combines analytical expertise with structured project execution to drive organizational success. As a Project Manager at Coconut Luxembourg, Derrick has extensive experience managing EU-funded projects, ensuring compliance with funding requirements, coordinating multinational teams, and delivering impactful results. His experience includes roles at Mercedes Benz Mobility, FEV Europe GmbH, and the University of Koblenz, where he specialized in internal communications, digital transformation, and stakeholder engagement.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
     },
     {
       name: "Rasa Liepina",
       title: "Social Media Coordinator",
       bio: "From Riga, Latvia, Rasa began her work with CoconutWork in early 2022 as an Erasmus+ project participant.",
       fullDescription: "From Riga, Latvia, Rasa began her work with CoconutWork in early 2022 in her first-ever Erasmus+ project as a participant. Inspired by her upbringing and family, she embraced the early love of travel; she felt an international calling that led her to the UK—graduating from the University of Worcester in Media & Cultures. Alongside her main studies, she explored additional disciplines such as sociology, film, and sustainability, demonstrating a broad spectrum of interests. With a vintage camera, she captured her adventures in her first project and just four experiences later became part of the Coconut team. Rasa sees each day with Coconut as a fresh opportunity – a chance to embrace challenges, form connections, and create memories. With a camera, phone, and drone in hand, Rasa embodies the vibrant spirit of the team, capturing the spontaneous moments and the beauty of our projects.",
-      image: "@assets/Screenshot 2025-07-02 at 06.41.34_1751409722550.png"
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
     }
   ];
 
