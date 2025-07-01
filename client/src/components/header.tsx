@@ -26,7 +26,15 @@ export default function Header() {
       }, 100);
     } else {
       // We're already on home page, just scroll
-      scrollToSectionWithOffset(sectionId);
+      // Add slight delay for mobile to ensure DOM is ready
+      const isMobile = window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        setTimeout(() => {
+          scrollToSectionWithOffset(sectionId);
+        }, 50);
+      } else {
+        scrollToSectionWithOffset(sectionId);
+      }
     }
     setIsMenuOpen(false);
   };
@@ -38,8 +46,8 @@ export default function Header() {
       const isMobile = window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       
       if (isMobile) {
-        // For mobile, use a larger offset and different calculation
-        const headerOffset = 120; // More space on mobile
+        // For mobile, use a much larger offset to show the title properly
+        const headerOffset = 200; // Large offset for mobile to show title clearly
         const elementTop = element.offsetTop;
         const targetPosition = elementTop - headerOffset;
 
