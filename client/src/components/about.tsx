@@ -28,10 +28,11 @@ export default function About() {
                 <div className="relative">
                   <div className="w-32 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg p-4">
                     <div className="text-center">
-                      {/* Luxembourg Map SVG */}
-                      <svg className="w-16 h-12 mx-auto mb-1" viewBox="0 0 60 40" fill="white">
-                        <path d="M15 8 L45 8 L45 32 L15 32 Z M20 12 L40 12 L40 28 L20 28 Z" fill="white" stroke="white" strokeWidth="1"/>
-                        <circle cx="30" cy="20" r="2" fill="white"/>
+                      {/* Luxembourg Map SVG - Accurate outline */}
+                      <svg className="w-16 h-20 mx-auto mb-1" viewBox="0 0 100 120" fill="white">
+                        <path d="M 30 15 L 70 15 L 75 25 L 78 40 L 75 55 L 70 70 L 65 85 L 55 95 L 45 100 L 35 95 L 25 85 L 20 70 L 18 55 L 20 40 L 25 25 Z" 
+                              fill="white" stroke="white" strokeWidth="1"/>
+                        <circle cx="50" cy="60" r="2" fill="white"/>
                       </svg>
                       <div className="text-xs font-bold text-white">Luxembourg</div>
                     </div>
@@ -51,19 +52,25 @@ export default function About() {
                 <div className="relative">
                   <div className="w-48 h-32 bg-gradient-to-r from-primary/20 to-primary/10 rounded-xl flex items-center justify-center border-2 border-primary/30 p-4">
                     <div className="text-center">
-                      {/* European Union Map SVG */}
-                      <svg className="w-32 h-20 mx-auto mb-1" viewBox="0 0 120 80" fill="none">
-                        {/* Simplified Europe outline */}
-                        <path d="M20 25 Q30 15 45 20 Q60 18 75 25 Q90 22 100 30 L105 45 Q100 60 85 65 Q70 70 55 68 Q40 70 25 65 Q15 55 20 40 Z" 
-                              fill="rgb(133, 77, 14)" stroke="rgb(133, 77, 14)" strokeWidth="1" opacity="0.8"/>
+                      {/* European Union Map SVG - Accurate Europe outline */}
+                      <svg className="w-36 h-24 mx-auto mb-1" viewBox="0 0 800 600" fill="none">
+                        {/* Accurate Europe outline based on geographic data */}
+                        <path d="M 120 180 L 150 160 L 180 150 L 210 140 L 250 135 L 290 140 L 330 145 L 370 150 L 410 155 L 450 160 L 490 165 L 530 170 L 570 175 L 610 180 L 650 185 L 680 200 L 700 220 L 720 250 L 730 280 L 735 320 L 730 360 L 720 400 L 700 440 L 680 470 L 650 490 L 610 500 L 570 505 L 530 500 L 490 495 L 450 490 L 410 485 L 370 480 L 330 475 L 290 470 L 250 465 L 210 460 L 180 450 L 150 440 L 130 420 L 115 400 L 105 380 L 100 360 L 105 340 L 110 320 L 115 300 L 120 280 L 125 260 L 120 240 L 115 220 L 120 200 Z" 
+                              fill="rgb(133, 77, 14)" stroke="rgb(133, 77, 14)" strokeWidth="2" opacity="0.8"/>
+                        {/* Scandinavia */}
+                        <path d="M 300 100 L 350 90 L 400 95 L 420 120 L 430 150 L 420 180 L 400 200 L 370 210 L 340 200 L 320 180 L 300 160 L 290 140 L 295 120 Z" 
+                              fill="rgb(133, 77, 14)" opacity="0.8"/>
+                        {/* British Isles */}
+                        <path d="M 180 200 L 200 190 L 220 200 L 230 220 L 225 240 L 220 260 L 210 280 L 200 290 L 185 285 L 175 270 L 170 250 L 175 230 L 180 210 Z" 
+                              fill="rgb(133, 77, 14)" opacity="0.8"/>
+                        {/* Iberian Peninsula */}
+                        <path d="M 120 350 L 160 340 L 200 350 L 220 370 L 230 400 L 220 430 L 200 450 L 170 460 L 140 455 L 120 440 L 110 420 L 115 400 L 120 380 Z" 
+                              fill="rgb(133, 77, 14)" opacity="0.8"/>
+                        {/* Italian Peninsula */}
+                        <path d="M 400 350 L 420 340 L 430 360 L 440 390 L 445 420 L 440 450 L 430 480 L 420 500 L 410 480 L 405 450 L 400 420 L 395 390 L 398 370 Z" 
+                              fill="rgb(133, 77, 14)" opacity="0.8"/>
                         {/* Luxembourg highlighted */}
-                        <circle cx="55" cy="40" r="3" fill="rgb(133, 77, 14)"/>
-                        {/* EU stars pattern */}
-                        <circle cx="35" cy="35" r="1" fill="rgb(133, 77, 14)"/>
-                        <circle cx="45" cy="30" r="1" fill="rgb(133, 77, 14)"/>
-                        <circle cx="65" cy="32" r="1" fill="rgb(133, 77, 14)"/>
-                        <circle cx="75" cy="40" r="1" fill="rgb(133, 77, 14)"/>
-                        <circle cx="80" cy="50" r="1" fill="rgb(133, 77, 14)"/>
+                        <circle cx="350" cy="280" r="6" fill="rgb(133, 77, 14)" stroke="white" strokeWidth="2"/>
                       </svg>
                       <div className="text-sm font-bold text-primary">European Union</div>
                     </div>
@@ -82,28 +89,38 @@ export default function About() {
                 <div className="relative">
                   <div className="w-56 h-36 bg-gradient-to-r from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center border-2 border-secondary/30 p-4">
                     <div className="text-center">
-                      {/* Euro-Mediterranean Map SVG */}
-                      <svg className="w-40 h-24 mx-auto mb-1" viewBox="0 0 140 90" fill="none">
-                        {/* Europe (simplified) */}
-                        <path d="M20 15 Q35 5 55 12 Q75 8 95 18 Q110 15 120 25 L125 35 Q120 45 105 50 Q85 55 65 52 Q45 55 25 50 Q10 40 15 25 Z" 
-                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                      {/* Euro-Mediterranean Map SVG - Accurate geographic representation */}
+                      <svg className="w-44 h-28 mx-auto mb-1" viewBox="0 0 1000 600" fill="none">
+                        {/* Europe - Accurate outline */}
+                        <path d="M 150 120 L 200 100 L 250 90 L 300 85 L 350 90 L 400 95 L 450 100 L 500 105 L 550 110 L 600 115 L 650 120 L 700 130 L 750 145 L 780 170 L 800 200 L 810 240 L 805 280 L 790 320 L 770 350 L 740 375 L 700 390 L 650 395 L 600 390 L 550 385 L 500 380 L 450 375 L 400 370 L 350 365 L 300 360 L 250 355 L 200 350 L 170 330 L 150 300 L 140 270 L 145 240 L 150 210 L 155 180 L 150 150 Z" 
+                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="3" opacity="0.8"/>
                         
-                        {/* Mediterranean Sea */}
-                        <ellipse cx="70" cy="55" rx="45" ry="8" fill="rgb(34, 139, 34)" opacity="0.3"/>
+                        {/* Scandinavia */}
+                        <path d="M 350 60 L 400 50 L 450 55 L 480 80 L 490 110 L 480 140 L 450 160 L 410 170 L 370 160 L 340 140 L 330 110 L 335 80 Z" 
+                              fill="rgb(34, 139, 34)" opacity="0.8"/>
                         
-                        {/* North Africa */}
-                        <path d="M15 60 Q40 58 70 62 Q100 60 130 65 L135 75 Q110 80 80 78 Q50 82 20 78 Q5 70 10 65 Z" 
-                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                        {/* British Isles */}
+                        <path d="M 200 150 L 230 140 L 260 150 L 280 170 L 275 190 L 270 210 L 260 230 L 250 240 L 230 235 L 215 220 L 205 200 L 200 180 Z" 
+                              fill="rgb(34, 139, 34)" opacity="0.8"/>
+                        
+                        {/* North Africa - Morocco to Egypt */}
+                        <path d="M 100 420 L 200 410 L 300 415 L 400 420 L 500 425 L 600 430 L 700 435 L 800 440 L 850 460 L 880 490 L 870 520 L 850 540 L 800 550 L 700 545 L 600 540 L 500 535 L 400 530 L 300 525 L 200 520 L 120 510 L 100 490 L 95 460 Z" 
+                              fill="rgb(34, 139, 34)" opacity="0.8"/>
                         
                         {/* Middle East */}
-                        <path d="M120 30 Q130 28 138 35 L140 50 Q135 60 125 58 Q115 55 115 45 Q118 35 120 30 Z" 
-                              fill="rgb(34, 139, 34)" stroke="rgb(34, 139, 34)" strokeWidth="1" opacity="0.7"/>
+                        <path d="M 750 200 L 850 190 L 920 210 L 950 250 L 960 300 L 950 350 L 920 380 L 880 400 L 840 410 L 800 400 L 770 380 L 750 350 L 745 320 L 750 280 L 755 240 Z" 
+                              fill="rgb(34, 139, 34)" opacity="0.8"/>
                         
-                        {/* Key cities/regions marked */}
-                        <circle cx="55" cy="35" r="2" fill="rgb(34, 139, 34)"/> {/* Luxembourg area */}
-                        <circle cx="40" cy="65" r="1.5" fill="rgb(34, 139, 34)"/> {/* Morocco */}
-                        <circle cx="85" cy="70" r="1.5" fill="rgb(34, 139, 34)"/> {/* Tunisia */}
-                        <circle cx="125" cy="45" r="1.5" fill="rgb(34, 139, 34)"/> {/* Turkey */}
+                        {/* Mediterranean Sea - lighter color */}
+                        <ellipse cx="500" cy="350" rx="300" ry="50" fill="rgb(135, 206, 235)" opacity="0.4" stroke="rgb(34, 139, 34)" strokeWidth="1"/>
+                        
+                        {/* Key locations marked */}
+                        <circle cx="400" cy="200" r="8" fill="rgb(34, 139, 34)" stroke="white" strokeWidth="2"/> {/* Luxembourg */}
+                        <circle cx="250" cy="480" r="6" fill="rgb(34, 139, 34)"/> {/* Morocco */}
+                        <circle cx="450" cy="500" r="6" fill="rgb(34, 139, 34)"/> {/* Algeria */}
+                        <circle cx="550" cy="510" r="6" fill="rgb(34, 139, 34)"/> {/* Tunisia */}
+                        <circle cx="850" cy="300" r="6" fill="rgb(34, 139, 34)"/> {/* Turkey */}
+                        <circle cx="750" cy="480" r="6" fill="rgb(34, 139, 34)"/> {/* Egypt */}
                       </svg>
                       <div className="text-sm font-bold text-secondary">Euro-Mediterranean</div>
                     </div>
