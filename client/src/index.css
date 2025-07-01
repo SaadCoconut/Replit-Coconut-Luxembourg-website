@@ -67,6 +67,11 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+
+  /* Scroll margin for sections to account for sticky header */
+  section[id] {
+    scroll-margin-top: 100px;
+  }
 }
 
 /* Custom utility classes */
