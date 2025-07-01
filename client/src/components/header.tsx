@@ -34,7 +34,19 @@ export default function Header() {
   const scrollToSectionWithOffset = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Get the element's position relative to the document
+      const rect = element.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const elementTop = rect.top + scrollTop;
+      
+      // Account for header height (h-20 = 80px) plus some padding
+      const headerOffset = 90;
+      const targetPosition = elementTop - headerOffset;
+
+      window.scrollTo({
+        top: Math.max(0, targetPosition),
+        behavior: 'smooth'
+      });
     }
   };
 
