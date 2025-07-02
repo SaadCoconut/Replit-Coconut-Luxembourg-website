@@ -1,10 +1,10 @@
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Gilles Evrard Essuman",
-      title: "President of Coconut Luxembourg",
-      bio: "Doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation.",
-      fullDescription: "Gilles is a doctoral researcher in economic geography at the University of Luxembourg. His work focuses on community economics, territorial development, and social innovation. Minus his academic engagements where he researches and lectures, he also consults and trains on various youth work projects. Before moving to Luxembourg, he was actively engaged as a rapporteur and facilitator in several CoconutWork projects. The fantastic collaborations with the then team and people involved with the network led to the creation of CoconutWork Luxembourg to widen the network's impact across Europe. The aim is to empower the local Luxembourgish youth on issues related to community development, youth participation, and socio-entrepreneurial empowerment. Gilles sees the network as an important European hub to help EU youth develop themselves and gain the necessary skills to become active Europeans who are participants and not only observers.",
+      name: "Dr. Gilles Evrard Essuman",
+      title: "President, Coconut Luxembourg",
+      bio: "Committed youth advocate and social innovation expert with over a decade of experience designing and coordinating international projects that empower young people and local communities.",
+      fullDescription: "Gilles is a committed youth advocate and social innovation expert with over a decade of experience designing and coordinating international projects that empower young people and local communities. As President of Coconut Luxembourg, he leads the organisation's mission to create meaningful learning opportunities, foster active citizenship, and strengthen social inclusion across Europe. With a background in economic geography and a PhD focused on community-led development and socio-territorial transformation, Gilles brings both academic insight and hands-on experience to the NGO's activities. He has successfully managed and consulted on numerous EU-funded projects, particularly under Erasmus+ and Horizon Europe, supporting youth participation, social entrepreneurship, and community-driven initiatives in more than 20 countries. A strong believer in collaboration and creativity, Gilles integrates design thinking and participatory methods into Coconut's programmes to ensure young people are not only beneficiaries but active shapers of change.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
     },
     {
