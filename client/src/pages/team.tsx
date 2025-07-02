@@ -49,7 +49,7 @@ export default function TeamPage() {
                   <img 
                     src={member.image} 
                     alt={`${member.name} profile`} 
-                    className="w-full max-w-md mx-auto rounded-2xl shadow-xl object-cover aspect-square"
+                    className="w-full max-w-md mx-auto rounded-2xl shadow-xl object-cover object-top aspect-square"
                   />
                 </div>
                 
