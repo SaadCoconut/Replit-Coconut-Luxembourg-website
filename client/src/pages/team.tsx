@@ -1,3 +1,5 @@
+import gillesPhoto from "@assets/E8901D19-F85E-4B20-AD5E-BB24B6C1926D_1751419769653.jpeg";
+
 export default function TeamPage() {
   const teamMembers = [
     {
@@ -5,7 +7,7 @@ export default function TeamPage() {
       title: "President, Coconut Luxembourg",
       bio: "Committed youth advocate and social innovation expert with over a decade of experience designing and coordinating international projects that empower young people and local communities.",
       fullDescription: "Gilles is a committed youth advocate and social innovation expert with over a decade of experience designing and coordinating international projects that empower young people and local communities. As President of Coconut Luxembourg, he leads the organisation's mission to create meaningful learning opportunities, foster active citizenship, and strengthen social inclusion across Europe. With a background in economic geography and a PhD focused on community-led development and socio-territorial transformation, Gilles brings both academic insight and hands-on experience to the NGO's activities. He has successfully managed and consulted on numerous EU-funded projects, particularly under Erasmus+ and Horizon Europe, supporting youth participation, social entrepreneurship, and community-driven initiatives in more than 20 countries. A strong believer in collaboration and creativity, Gilles integrates design thinking and participatory methods into Coconut's programmes to ensure young people are not only beneficiaries but active shapers of change.",
-      image: "/attached_assets/E8901D19-F85E-4B20-AD5E-BB24B6C1926D_1751419769653.jpeg"
+      image: gillesPhoto
     },
     {
       name: "Fahd Mohammadi", 
