@@ -57,7 +57,7 @@ export default function TeamPage() {
                   <h2 className="text-3xl font-bold text-neutral-800 mb-3">{member.name}</h2>
                   <h3 className="text-xl font-semibold text-primary mb-6">{member.title}</h3>
                   
-                  <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+                  <p className="text-lg text-neutral-700 leading-relaxed mb-6 text-justify">
                     {member.fullDescription}
                   </p>
                   
