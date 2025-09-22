@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertContactMessageSchema, insertChatMessageSchema } from "@shared/schema";
+import { insertContactMessageSchema, insertChatMessageSchema, insertPartnershipMessageSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -12,6 +12,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const contactData = insertContactMessageSchema.parse(req.body);
       const message = await storage.createContactMessage(contactData);
       res.json({ success: true, message: "Contact message received successfully", id: message.id });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ message: "Invalid input data", errors: error.errors });
+      } else {
+        res.status(500).json({ message: "Internal server error" });
+      }
+    }
+  });
+
+  // Partnership inquiries
+  app.post("/api/partnership", async (req, res) => {
+    try {
+      const partnershipData = insertPartnershipMessageSchema.parse(req.body);
+      const message = await storage.createPartnershipMessage(partnershipData);
+      res.json({ success: true, message: "Partnership request received successfully", id: message.id });
     } catch (error) {
       if (error instanceof z.ZodError) {
         res.status(400).json({ message: "Invalid input data", errors: error.errors });

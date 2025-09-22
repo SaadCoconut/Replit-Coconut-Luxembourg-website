@@ -245,11 +245,8 @@ export default function PartnershipsPage() {
 
   const partnershipMutation = useMutation({
     mutationFn: async (data: PartnershipFormData) => {
-      return apiRequest("/api/partnership", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
-      });
+      const response = await apiRequest("POST", "/api/partnership", data);
+      return response.json();
     },
     onSuccess: () => {
       toast({
@@ -258,7 +255,7 @@ export default function PartnershipsPage() {
       });
       form.reset();
     },
-    onError: (error) => {
+    onError: () => {
       toast({
         title: "Submission failed",
         description: "Please try again or contact us directly.",
