@@ -1,4 +1,4 @@
-import { users, contactMessages, chatMessages, type User, type InsertUser, type ContactMessage, type InsertContactMessage, type ChatMessage, type InsertChatMessage } from "@shared/schema";
+import { users, contactMessages, chatMessages, partnershipMessages, type User, type InsertUser, type ContactMessage, type InsertContactMessage, type ChatMessage, type InsertChatMessage, type PartnershipMessage, type InsertPartnershipMessage } from "@shared/schema";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -7,23 +7,29 @@ export interface IStorage {
   createContactMessage(message: InsertContactMessage): Promise<ContactMessage>;
   getChatMessages(sessionId: string): Promise<ChatMessage[]>;
   createChatMessage(message: InsertChatMessage): Promise<ChatMessage>;
+  getPartnershipMessages(): Promise<PartnershipMessage[]>;
+  createPartnershipMessage(message: InsertPartnershipMessage): Promise<PartnershipMessage>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private contactMessages: Map<number, ContactMessage>;
   private chatMessages: Map<number, ChatMessage>;
+  private partnershipMessages: Map<number, PartnershipMessage>;
   private currentUserId: number;
   private currentContactId: number;
   private currentChatId: number;
+  private currentPartnershipId: number;
 
   constructor() {
     this.users = new Map();
     this.contactMessages = new Map();
     this.chatMessages = new Map();
+    this.partnershipMessages = new Map();
     this.currentUserId = 1;
     this.currentContactId = 1;
     this.currentChatId = 1;
+    this.currentPartnershipId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -68,6 +74,23 @@ export class MemStorage implements IStorage {
       createdAt: new Date() 
     };
     this.chatMessages.set(id, message);
+    return message;
+  }
+
+  async getPartnershipMessages(): Promise<PartnershipMessage[]> {
+    return Array.from(this.partnershipMessages.values())
+      .sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime());
+  }
+
+  async createPartnershipMessage(insertMessage: InsertPartnershipMessage): Promise<PartnershipMessage> {
+    const id = this.currentPartnershipId++;
+    const message: PartnershipMessage = {
+      ...insertMessage,
+      website: insertMessage.website ?? null,
+      id,
+      createdAt: new Date()
+    };
+    this.partnershipMessages.set(id, message);
     return message;
   }
 }

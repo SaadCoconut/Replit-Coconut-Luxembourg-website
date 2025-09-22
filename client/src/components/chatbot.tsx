@@ -12,7 +12,7 @@ export default function Chatbot() {
   const [sessionId] = useState(() => Math.random().toString(36).substring(7));
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const { data: messages = [], refetch } = useQuery({
+  const { data: messages = [], refetch } = useQuery<ChatMessage[]>({
     queryKey: [`/api/chat/${sessionId}`],
     enabled: isOpen
   });
@@ -59,7 +59,7 @@ export default function Chatbot() {
   };
 
   // Initial bot message for new sessions
-  const initialMessage = {
+  const initialMessage: ChatMessage = {
     id: 0,
     message: "Hello! I'm here to help answer questions about Coconut Luxembourg and our youth empowerment programs. How can I assist you today?",
     isUser: false,
@@ -67,7 +67,7 @@ export default function Chatbot() {
     createdAt: new Date()
   };
 
-  const allMessages = messages.length === 0 ? [initialMessage] : messages;
+  const allMessages: ChatMessage[] = messages.length === 0 ? [initialMessage] : messages;
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
